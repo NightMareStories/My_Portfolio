@@ -1,0 +1,44 @@
+//====================== import ========================
+
+@import '../../vars';
+
+//======================================================
+
+
+//====================== styles ========================
+
+.header {
+    padding: 18px 0;
+    .top-header {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+
+        }    
+}
+.header-info {
+        display: flex;
+        &__logo {
+            &_img {
+                width: 57px;
+                height: 57px;
+                border-radius: 50%;
+            }
+        }
+        &__text {
+            padding-left: 9px;
+            &_username {
+                font-family: $font-bold;
+                font-size: 16px;
+                line-height: 18px;
+                color: $color-primary-black;
+                margin-bottom: 3px;
+            } 
+            &_userprof {
+                font-size: 12px;
+                color: rgba(#2b2a2c, .7);
+            }
+        }
+    }
+}
+//======================================================
