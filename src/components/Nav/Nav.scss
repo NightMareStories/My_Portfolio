@@ -1,0 +1,45 @@
+//====================== import ========================
+
+@import '../../vars';
+
+//======================================================
+
+
+//====================== styles ========================
+
+.actions-header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    li {
+        font-family: $font-bold;
+        padding: 10px 20px;
+        &:last-child {
+            border: 2px solid $color-primary-black;
+            border-radius: 20px;
+            padding: 10px 35px;
+            cursor: pointer;
+            margin: 0px 20px;
+            &:hover {
+                background-color: $color-primary-black;
+                transition: all 0.3s ease 0s;
+                span {
+                    border: none;
+                    color: $color-primary-white;
+                }
+            }
+        }  
+    }
+    &__link {
+        font-size: 14px;
+        color: $color-primary-black;
+        text-transform: uppercase;
+        span {
+            &:hover {
+                border-bottom: 3px solid $color-primary-black;
+            }   
+        }
+    }
+    
+}
+//======================================================

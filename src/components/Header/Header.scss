@@ -13,11 +13,13 @@
         &__content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
         }    
 }
 .header-info {
         display: flex;
+        align-items: center;
         &__logo {
             &_img {
                 width: 57px;
