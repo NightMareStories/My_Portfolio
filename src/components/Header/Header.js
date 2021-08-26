@@ -1,5 +1,6 @@
 import Nav from '../Nav/Nav';
 import './Header.scss';
+// import '../../css/components/Header/Header.css';
 
 function Header() {
     return (
@@ -26,11 +27,6 @@ function Header() {
                         <div className="top-header__column header-nav">
                             <Nav />
                         </div>
-                    </div>
-                </div>
-                <div className="header__bootom">
-                    <div className="bottom-header__content _container">
-
                     </div>
                 </div>
             </header>

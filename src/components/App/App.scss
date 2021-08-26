@@ -30,7 +30,7 @@ html {
 }
 body {
     font-family: $font-regular;
-    font-size: 1rem;
+    font-size: 15px;
     color: $color-primary-black;
 }
 
@@ -39,6 +39,9 @@ body {
     max-width: 1200px;
     padding: 0px 15px;
     margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 //=======================================================
