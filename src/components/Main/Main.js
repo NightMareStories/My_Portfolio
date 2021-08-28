@@ -53,6 +53,7 @@ function Main() {
 
             <section className="page__portfolio portfolio-block _container">
                 <div className="portfolio-block__content">
+                    <h2 className="portfolio-block__title">Portfolio</h2>
                     <div className="portfolio-block__nav portfolio-nav">
                         <a href="" className="portfolio-nav__filter">All</a>
                         <a href="" className="portfolio-nav__filter">App</a>
@@ -164,6 +165,30 @@ function Main() {
                     </div>
                     <div className="portfolio-block__button portfolio-button">
                         <button type="button" className="portfolio-button__btn _btn">load more work</button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="page__about about-block _container">
+                <div className="about-block__content">
+                    <div className="about-block__picture">
+                        <picture>
+                            <source srcSet="img/logo-img.webp" type="image/webp" />
+                            <img src="img/logo-img.png" alt="" />
+                        </picture>
+                    </div>
+                    <div className="about-block__text about-text">
+                        <h2 className="about-text__title">about me</h2>
+                        <h3 className="about-text__subtitle">who am i</h3>
+                        <div className="about-text__text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus explicabo molestias debitis repudiandae commodi voluptatibus, itaque dolores alias repellendus amet numquam aliquid, magni laborum, cum non quos sunt reprehenderit illum?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, cumque quidem possimus enim in excepturi expedita obcaecati quae? Quibusdam libero adipisci eveniet obcaecati suscipit quas, consectetur repellat explicabo maiores sed!</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, pariatur enim. Aspernatur a perspiciatis quia, omnis magnam impedit autem ipsum corrupti possimus obcaecati neque velit, dicta, blanditiis hic deleniti sed!</p>
+                        </div>
+                        <div className="about-text__button about-buttons">
+                            <a href="" className="about-buttons__button _btn">HIRE ME</a>
+                            <a href="" className="about-buttons__button _btn">SEE MY RESUME</a>
+                        </div>
                     </div>
                 </div>
             </section>

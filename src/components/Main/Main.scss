@@ -1,11 +1,13 @@
-//======================= import ========================
+//======================= import =======================
 
 @import '../../vars';
 
-//=======================================================
+//======================================================
 
 
 //====================== styles ========================
+
+//---------------------- intro -------------------------
 
 .intro-block {
     &__content {
@@ -71,14 +73,18 @@
 .info-buttons {
     &__button {
         &:last-child {
-            margin-left: 10px;
+            margin-left: 15px;
         }
     }
 }
 
+//----------------------------------------------------
+
+//-------------------- portfolio ---------------------
+
 .portfolio-block{
     &__content {
-    padding: 40px 0px;
+    margin: 40px 0px;
     }
     &__button {
         text-align: center;
@@ -92,6 +98,13 @@
                 border: 2px solid $color-primary-black;
             }
         }
+    }
+    &__title {
+        font-size: 45px;
+        text-align: center;
+        font-family: $font-bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
     }
 }
 
@@ -162,4 +175,82 @@
     }
 }
 
+//------------------------------------------------------
+
+//----------------------- about ------------------------
+
+.about-block {
+    &__content {
+        margin: 120px 0px;
+        max-width: 1090px;
+        display: flex;
+    }
+    &__picture, &__text {
+        width: 50%;
+    }
+    &__text {
+        padding-left: 45px;
+    }
+    &__picture {
+        display: flex;
+        align-items: center;
+        position: relative;
+        img {
+            position: relative;
+            z-index: 2;
+            display: block;
+            max-width: 100%;
+            height: auto;
+            
+        }
+        &::before {
+            content: '';
+            width: 595px;
+            height: 480px;
+            background-color: rgba(240, 243, 238, 0.7);
+            position: absolute;
+            left: -25px;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+}
+
+.about-text {
+    &__title, &__subtitle{
+        text-transform: uppercase;
+    }
+    &__title {
+        font-family: $font-bold;
+        font-size: 45px;
+    }
+    &__subtitle {
+        font-family: $font-bold;
+        font-size: 90px;
+        color: rgba($color-primary-black, 0.2);
+        margin-bottom: 20px;
+        line-height: 1.1;
+        position: relative;
+        left: -10px;
+    }
+    &__text {
+        margin-bottom: 40px;
+        p {
+            font-family: $font-light;
+            font-size: 12px;
+            color: rgba($color-primary-grey, .7);
+            line-height: 2;
+        }
+    }
+}
+
+.about-buttons {
+    margin-bottom: 40px;
+    &__button {
+        &:last-child {
+            margin-left: 15px;
+        }
+    }
+}
+//------------------------------------------------------
 //======================================================
