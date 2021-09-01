@@ -1,0 +1,46 @@
+//====================== import ========================
+
+@import '../../../vars';
+
+//======================================================
+
+
+//====================== styles ========================
+
+.actions-footer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    &__link {
+        font-family: $font-regular;
+        margin-right: 20px;
+        font-size: 14px;
+        color: #8d8d8e;
+        text-transform: capitalize;
+        &:hover {
+            color: #bbbbcc;
+        }
+        &_btn {
+            font-family: $font-bold;
+            padding: 10px 25px;
+            margin: 10px 30px;
+            border: 2px solid #8d8d8e;
+            text-transform: uppercase;
+            line-height: 1.1;
+            border-radius: 20px;
+            transition: 
+            background-color
+            .2s linear, color
+            .2s linear;
+            &:hover {
+                background-color: #bbbbcc;
+                color: $color-primary-black;
+        }
+    }
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+}
+
+//======================================================

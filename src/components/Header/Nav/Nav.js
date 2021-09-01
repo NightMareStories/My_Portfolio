@@ -11,7 +11,7 @@ function Nav() {
                         <li><Link to='/' className="actions-header__link"><span>About me</span></Link></li>
                         <li><Link to='/rates' className="actions-header__link"><span>My projects</span></Link></li>
                         <li><Link to='/' className="actions-header__link"><span>Portfolio</span></Link></li>
-                        <li><Link to='/' className="actions-header__link"><span>Contacts</span></Link></li>
+                        <li><Link to='/' className="actions-header__link"><span>Certificates</span></Link></li>
                         <li><Link to='/' className="actions-header__link actions-header__link_btn"><span>Hire me</span></Link></li>
                     </ul >
                 </nav >

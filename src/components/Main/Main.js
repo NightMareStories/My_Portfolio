@@ -1,4 +1,5 @@
 import './Main.scss';
+import { Link as Link } from 'react-router-dom';
 // import '../../css/components/Main/Main.css';
 
 
@@ -12,30 +13,30 @@ function Main() {
                         <div className="info-block__title"><h1>Poteryaev Aleksandr</h1></div>
                         <div className="info-block__text">Front-End Developer</div>
                         <div className="info-block__social social-links">
-                            <a href="" className="social-links__link">
+                            <Link to="/" className="social-links__link">
                                 <picture>
                                     <source srcSet="img/telegram-icon.webp" type="image/webp" />
                                     <img src="img/telegram-icon.png" alt="" />
                                 </picture>
-                            </a>
-                            <a href="" className="social-links__link">
+                            </Link>
+                            <Link to="/" className="social-links__link">
                                 <picture>
                                     <source srcSet="img/whatsapp-icon.webp" type="image/webp" />
                                     <img src="img/whatsapp-icon.png" alt="" />
                                 </picture>
-                            </a>
-                            <a href="" className="social-links__link">
+                            </Link>
+                            <Link to="/" className="social-links__link">
                                 <picture>
                                     <source srcSet="img/gmail-icon.webp" type="image/webp" />
                                     <img src="img/gmail-icon.png" alt="" />
                                 </picture>
-                            </a>
-                            <a href="" className="social-links__link">
+                            </Link>
+                            <Link to="/" className="social-links__link">
                                 <picture>
                                     <source srcSet="img/yandex-icon.webp" type="image/webp" />
                                     <img src="img/yandex-icon.png" alt="" />
                                 </picture>
-                            </a>
+                            </Link>
                         </div>
                         <div className="info-block__buttons info-buttons">
                             <a href="" className="info-buttons__button _btn">HIRE ME</a>

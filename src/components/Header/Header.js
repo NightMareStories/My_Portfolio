@@ -1,4 +1,4 @@
-import Nav from '../Nav/Nav';
+import Nav from './Nav/Nav';
 import './Header.scss';
 // import '../../css/components/Header/Header.css';
 
