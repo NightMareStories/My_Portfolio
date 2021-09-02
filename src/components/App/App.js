@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Main from '../Main/Main';
 import './App.scss';
 import Footer from '../Footer/Footer';
+import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
 // import Rates from '../../projects/src/App';
 // import '../../css/components/App/App.css';
 
@@ -19,6 +20,7 @@ function App() {
                 <Switch>
                     <Route exact path="/" />
                     <Route exact path="/rates" />
+                    <Route exact path="/portfolio" component={ModalPortfolio}/>
                 </Switch>
                 <Main />
                 <Footer />

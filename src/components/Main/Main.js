@@ -63,12 +63,12 @@ function Main() {
                     <div className="portfolio-block__portfolio portfolio-content">
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
@@ -80,12 +80,12 @@ function Main() {
                         </div>
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
@@ -97,12 +97,12 @@ function Main() {
                         </div>
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
@@ -114,12 +114,12 @@ function Main() {
                         </div>
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
@@ -131,12 +131,12 @@ function Main() {
                         </div>
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
@@ -148,12 +148,12 @@ function Main() {
                         </div>
                         <div className="portfolio-content__column">
                             <div className="portfolio-content__item portfolio-item">
-                                <a href="" className="portfolio-item__link">
+                                <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
                                         <source srcSet="img/sport-shop-img.webp" type="image/webp" />
                                         <img src="img/sport-shop-img.png" alt="" />
                                     </picture>
-                                </a>
+                                </Link>
                                 <div className="portfolio-item__text portfolio-text">
                                     <div className="portfolio-text__category">Category</div>
                                     <div className="portfolio-text__title">
