@@ -6,7 +6,11 @@ function ModalPortfolio() {
     return (
       <div className="modal-portfolio">
         <div className="modal_P modal_P-block">
-          <button className="modal_p-block__close" type="button"></button>
+          <button className="modal_p-block__close" type="button">
+            <picture>
+            <img src="img/close-icon.svg" alt="" className="modal_P-block__close_icon"/>
+            </picture>
+          </button>
           <div className="modal_P-block__content modal_P-content">
             <div className="modal_P-content__preview">
               <picture>
@@ -32,13 +36,25 @@ function ModalPortfolio() {
               </div>
             </div>
             <div className="modal_P-content__footer">
-              <div className="modal_P-content__links">
-                <button>Start App</button>
-                <button>Go to GitHub</button>
+              <div className="modal_P-content__links modal-links">
+                <button className="modal-links__start">Start App</button>
+                {/* <button className="modal-links__git"> */}
+                  <a href="https://github.com/NightMareStories/Sport-shop" className="modal-links__git">https://github.com/NightMareStories/Sport-shop</a>
+                  {/* </button> */}
               </div>
-              <div className="modal_P-content__slides">
-                <button>Previous</button>
-                <button>Next</button>
+              <div className="modal_P-content__slides slides-buttons">
+                <button className="slides-buttons__prev">
+                  <picture>
+                    <img src="img/prev-icon.svg" alt="" className="slides-buttons__prev_icon"/>
+                  </picture>
+                    Prev
+                </button>
+                <button className="slides-buttons__next">
+                  Next
+                <picture>
+                  <img src="img/next-icon.svg" alt="" className="slides-buttons__next_icon"/>
+              </picture>
+              </button>
               </div>
             </div>
           </div>
