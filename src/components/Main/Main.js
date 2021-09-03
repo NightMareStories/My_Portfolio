@@ -39,8 +39,8 @@ function Main() {
                             </Link>
                         </div>
                         <div className="info-block__buttons info-buttons">
-                            <a href="" className="info-buttons__button _btn">HIRE ME</a>
-                            <a href="" className="info-buttons__button _btn">SEE MY RESUME</a>
+                            <Link to="/contacts" className="info-buttons__button _btn">HIRE ME</Link>
+                            <Link to="/profile" className="info-buttons__button _btn">SEE MY RESUME</Link>
                         </div>
                     </div>
                     <div className="intro-block__picture">
@@ -218,7 +218,7 @@ function Main() {
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
                                 </div>
                             </div>
-                            <a href="" className="certificates-content__button _btn">read more</a>
+                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
                         </div>
                     </div>
                     <div className="certificates-content__column">
@@ -240,7 +240,7 @@ function Main() {
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
                                 </div>
                             </div>
-                            <a href="" className="certificates-content__button _btn">read more</a>
+                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
                         </div>
                     </div>
                     <div className="certificates-content__column">
@@ -261,7 +261,7 @@ function Main() {
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
                                 </div>
                             </div>
-                            <a href="" className="certificates-content__button _btn">read more</a>
+                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
                         </div>
                     </div>
                     <div className="certificates-content__column">
@@ -282,7 +282,7 @@ function Main() {
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
                                 </div>
                             </div>
-                            <a href="" className="certificates-content__button _btn">read more</a>
+                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
                         </div>
                     </div>
                     <div className="certificates-content__column">
@@ -303,7 +303,7 @@ function Main() {
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
                                 </div>
                             </div>
-                            <a href="" className="certificates-content__button _btn">read more</a>
+                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
                         </div>
                     </div>
                 </div>

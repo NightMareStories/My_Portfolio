@@ -4,6 +4,9 @@ import Main from '../Main/Main';
 import './App.scss';
 import Footer from '../Footer/Footer';
 import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
+import ModalCertificates from '../Modal/ModalCertificates/ModalCertificates';
+import ModalHire from '../Modal/ModalHire/ModalHire';
+import ModalResume from '../Modal/ModalResume/ModalResume';
 // import Rates from '../../projects/src/App';
 // import '../../css/components/App/App.css';
 
@@ -21,6 +24,9 @@ function App() {
                     <Route exact path="/" />
                     <Route exact path="/rates" />
                     <Route exact path="/portfolio" component={ModalPortfolio}/>
+                    <Route exact path="/certificates" component={ModalCertificates}/>
+                    <Route exact path="/Contacts" component={ModalHire}/>
+                    <Route exact path="/profile" component={ModalResume}/>
                 </Switch>
                 <Main />
                 <Footer />
