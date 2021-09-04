@@ -25,7 +25,7 @@ function App() {
                     <Route exact path="/rates" />
                     <Route exact path="/portfolio" component={ModalPortfolio}/>
                     <Route exact path="/certificates" component={ModalCertificates}/>
-                    <Route exact path="/Contacts" component={ModalHire}/>
+                    <Route exact path="/contacts" component={ModalHire}/>
                     <Route exact path="/profile" component={ModalResume}/>
                 </Switch>
                 <Main />

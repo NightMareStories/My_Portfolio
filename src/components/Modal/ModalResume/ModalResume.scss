@@ -1,0 +1,93 @@
+//====================== import ========================
+
+@import '../../../vars';
+
+//======================================================
+
+
+//====================== styles ========================
+
+.modal-resume {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba($color-primary-black, .5);
+    overflow: auto;
+}
+
+.modal_R-block {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    background-color: $color-primary-white;
+    &__close {
+        background: none;
+        border: 0;
+        &_icon {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            transition: all .2s ease;
+            &:hover {
+                width: 40px;
+                height: 40px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+.modal_R-content {
+    text-align: center;
+    &__header {
+        font-family: $font-bold;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    &__footer {
+        background-color: $color-primary-black;
+    }
+    .social-contacts {
+        margin-bottom: 70px;
+        &__link {
+            margin-right: 40px;
+             &_icon {
+                width: 100px;
+                height: 100px;  
+                border: 4px solid $color-primary-white;
+                transition: all .5s ease;
+                &:hover {
+                    border-radius: 100%;
+                    border-color: $color-primary-black;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+
+.side-text {
+    &__hired {
+        font-family: $font-extra-light-italic;
+        font-size: 20px;
+        color: $color-primary-white;
+        padding: 30px;
+    }
+}
+
+//======================================================

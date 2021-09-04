@@ -13,7 +13,7 @@ function ModalHire() {
                 </button>
                 <div className="modal_H-block__content modal_H-content">
                     <div className="modal_H-content__header">
-                        <h3 className="modal_H-content__title">Contact me in any way convenient for you.</h3>
+                        <h3 className="modal_H-content__title">Please, сontact me in any way convenient for you!</h3>
                     </div>
                     <div className="modal_H-content__contacts social-contacts">
                         <a href="" className="social-contacts__link">
@@ -53,6 +53,9 @@ function ModalHire() {
                             </picture>
                         </a>
                     </div>
+                    <div className="modal_H-content__footer side-text">
+                        <div className="side-text__hired">Thank you for your time!</div>
+                        </div>
                 </div>
             </div>
         </div>
