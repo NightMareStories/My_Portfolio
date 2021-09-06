@@ -1,9 +1,32 @@
 import './Main.scss';
 import { Link as Link } from 'react-router-dom';
+import React, { useState } from 'react';
 // import '../../css/components/Main/Main.css';
 
 
 function Main() {
+    const portfolio = React.createRef();
+    // const [port, setPort] = useState([]);
+    
+    
+    const filter = (event) => {
+        event.preventDefault();
+        if (!event.target.getAttribute('data-filter')) return false;
+        let category = event.target.getAttribute('data-filter');
+        let content = portfolio.current.children;
+        for(let i = 0; i < content.length; i++) {
+            if (category === 'all') {
+                content[i].classList.remove('hide');
+            }
+            else if (content[i].getAttribute('data-category') === category) {
+                content[i].classList.remove('hide');
+            }
+            else {
+                content[i].classList.add('hide');
+            }   
+        }
+    }
+
     return (
         <main className="page">
             <section className="page__intro intro-block _container">
@@ -55,13 +78,13 @@ function Main() {
             <section className="page__portfolio portfolio-block _container">
                 <div className="portfolio-block__content">
                     <h2 className="portfolio-block__title">Portfolio</h2>
-                    <div className="portfolio-block__nav portfolio-nav">
-                        <a href="" className="portfolio-nav__filter">All</a>
-                        <a href="" className="portfolio-nav__filter">App</a>
-                        <a href="" className="portfolio-nav__filter">Website</a>
+                    <div className="portfolio-block__nav portfolio-nav" onClick={filter}>
+                        <a href="" className="portfolio-nav__filter" data-filter="all">All</a>
+                        <a href="" className="portfolio-nav__filter" data-filter="app">App</a>
+                        <a href="" className="portfolio-nav__filter" data-filter="website">Website</a>
                     </div>
-                    <div className="portfolio-block__portfolio portfolio-content">
-                        <div className="portfolio-content__column">
+                    <div className="portfolio-block__portfolio portfolio-content" ref={portfolio}>
+                        <div className="portfolio-content__column" data-category="website" >
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -78,7 +101,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column">
+                        <div className="portfolio-content__column" data-category="app">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -95,7 +118,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column">
+                        <div className="portfolio-content__column" data-category="website">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -112,7 +135,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column">
+                        <div className="portfolio-content__column" data-category="app">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -129,7 +152,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column">
+                        <div className="portfolio-content__column" data-category="website">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -146,7 +169,7 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column">
+                        <div className="portfolio-content__column" data-category="website">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
