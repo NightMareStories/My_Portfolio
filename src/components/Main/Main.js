@@ -6,15 +6,25 @@ import React, { useState } from 'react';
 
 function Main() {
     const portfolio = React.createRef();
-    // const [port, setPort] = useState([]);
-    
-    
+    const filterActions = React.createRef();
+
     const filter = (event) => {
         event.preventDefault();
         if (!event.target.getAttribute('data-filter')) return false;
         let category = event.target.getAttribute('data-filter');
+        let actions = filterActions.current.children;
         let content = portfolio.current.children;
-        for(let i = 0; i < content.length; i++) {
+
+        for (let i = 0; i < actions.length; i++) {
+            if (!actions[i].classList.contains('active-filter') && actions[i] === event.target) {
+                actions[i].classList.add('active-filter');
+            }
+            else if (actions[i].classList.contains('active-filter') && actions[i] !== event.target){
+                actions[i].classList.remove('active-filter');
+            }
+        }
+        
+        for (let i = 0; i < content.length; i++) {
             if (category === 'all') {
                 content[i].classList.remove('hide');
             }
@@ -24,6 +34,18 @@ function Main() {
             else {
                 content[i].classList.add('hide');
             }   
+        }
+    }
+
+    const loadMoreWork = (event) => {
+        let content = portfolio.current.children;
+        let button = event.target;
+        for(let i = 0; i < content.length; i++) {
+           if (content[i].classList.contains('non-visible')){
+               content[i].classList.remove('non-visible');
+               button.classList.remove('_btn');
+               button.classList.add('non-visible');
+           }
         }
     }
 
@@ -78,8 +100,8 @@ function Main() {
             <section className="page__portfolio portfolio-block _container">
                 <div className="portfolio-block__content">
                     <h2 className="portfolio-block__title">Portfolio</h2>
-                    <div className="portfolio-block__nav portfolio-nav" onClick={filter}>
-                        <a href="" className="portfolio-nav__filter" data-filter="all">All</a>
+                    <div className="portfolio-block__nav portfolio-nav" onClick={filter} ref={filterActions}>
+                        <a href="" className="portfolio-nav__filter active-filter" data-filter="all">All</a>
                         <a href="" className="portfolio-nav__filter" data-filter="app">App</a>
                         <a href="" className="portfolio-nav__filter" data-filter="website">Website</a>
                     </div>
@@ -105,8 +127,8 @@ function Main() {
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
                                     </picture>
                                 </Link>
                                 <div className="portfolio-item__text portfolio-text">
@@ -139,8 +161,8 @@ function Main() {
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
                                     </picture>
                                 </Link>
                                 <div className="portfolio-item__text portfolio-text">
@@ -169,7 +191,76 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                        <div className="portfolio-content__column" data-category="website">
+                        <div className="portfolio-content__column" data-category="app">
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="portfolio-content__column non-visible" data-category="app" >
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="portfolio-content__column non-visible" data-category="app">
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="portfolio-content__column non-visible" data-category="app">
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
+                                        <img src="img/react-exchange-rates-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="portfolio-content__column non-visible" data-category="website">
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
                                     <picture>
@@ -186,9 +277,44 @@ function Main() {
                                 </div>
                             </div>
                         </div>
+                        <div className="portfolio-content__column non-visible" data-category="website">
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
+                                        <img src="img/sport-shop-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="portfolio-content__column non-visible" data-category="website">
+                            <div className="portfolio-content__item portfolio-item">
+                                <Link to="/portfolio" className="portfolio-item__link">
+                                    <picture>
+                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
+                                        <img src="img/sport-shop-img.png" alt="" />
+                                    </picture>
+                                </Link>
+                                <div className="portfolio-item__text portfolio-text">
+                                    <div className="portfolio-text__category">Category</div>
+                                    <div className="portfolio-text__title">
+                                        Title
+                                        <time className="portfolio-text__date" dateTime="">Date</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div className="portfolio-block__button portfolio-button">
-                        <button type="button" className="portfolio-button__btn _btn">load more work</button>
+                        <button type="button" className="portfolio-button__btn _btn" onClick={loadMoreWork}>load more work</button>
                     </div>
                 </div>
             </section>

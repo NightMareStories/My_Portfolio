@@ -122,8 +122,7 @@
         margin: 0px 15px;
         &:hover {
             text-decoration: underline;  
-        }
-              
+        }       
     }
 }
 
@@ -134,6 +133,7 @@
     &__column {
         flex: 0 0 33.333%;
         padding: 15px;
+        transition: all 1s ease;
     }
 }
 
@@ -148,10 +148,10 @@
     &__link {
         img {
             width: 370px;
-            height: 300px;
+            height: 250px;
             display: block;
             max-width: 100%;
-            height: auto;
+            // height: auto;
         }
     }
 }
@@ -175,6 +175,39 @@
         font-size: 16px;
         font-family: $font-bold;
     }
+}
+
+.hide {
+    flex: none;
+    opacity: 1;
+    animation:  portfolio;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform: scale(-1)
+}
+@keyframes portfolio {
+    to {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+
+.non-visible {
+   display: none;
+}
+
+.active-filter {
+    font-family: $font-bold;
+    color: $color-primary-black;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba($color-primary-black,.40);
 }
 
 //------------------------------------------------------
