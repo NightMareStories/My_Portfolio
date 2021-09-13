@@ -1,11 +1,12 @@
 import './Main.scss';
 import { Link as Link } from 'react-router-dom';
 import React, { useState } from 'react';
+import PortfolioList from '../../containers/PortfolioList';
 // import '../../css/components/Main/Main.css';
 
 
 function Main() {
-    const portfolio = React.createRef();
+    const portfolioRef = React.createRef();
     const filterActions = React.createRef();
 
     const filter = (event) => {
@@ -13,7 +14,7 @@ function Main() {
         if (!event.target.getAttribute('data-filter')) return false;
         let category = event.target.getAttribute('data-filter');
         let actions = filterActions.current.children;
-        let content = portfolio.current.children;
+        let content = portfolioRef.current.children;
 
         for (let i = 0; i < actions.length; i++) {
             if (!actions[i].classList.contains('active-filter') && actions[i] === event.target) {
@@ -38,7 +39,7 @@ function Main() {
     }
 
     const loadMoreWork = (event) => {
-        let content = portfolio.current.children;
+        let content = portfolioRef.current.children;
         let button = event.target;
         for(let i = 0; i < content.length; i++) {
            if (content[i].classList.contains('non-visible')){
@@ -105,7 +106,11 @@ function Main() {
                         <a href="" className="portfolio-nav__filter" data-filter="app">App</a>
                         <a href="" className="portfolio-nav__filter" data-filter="website">Website</a>
                     </div>
-                    <div className="portfolio-block__portfolio portfolio-content" ref={portfolio}>
+                    <div className="portfolio-block__portfolio portfolio-content" ref={portfolioRef}>
+                        <PortfolioList />
+                    </div>
+                    
+                    {/* <div className="portfolio-block__portfolio portfolio-content" ref={portfolio}>
                         <div className="portfolio-content__column" data-category="website" >
                             <div className="portfolio-content__item portfolio-item">
                                 <Link to="/portfolio" className="portfolio-item__link">
@@ -312,7 +317,7 @@ function Main() {
                             </div>
                         </div>
                         
-                    </div>
+                    </div> */}
                     <div className="portfolio-block__button portfolio-button">
                         <button type="button" className="portfolio-button__btn _btn" onClick={loadMoreWork}>load more work</button>
                     </div>

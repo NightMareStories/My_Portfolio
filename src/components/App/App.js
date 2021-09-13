@@ -7,6 +7,7 @@ import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
 import ModalCertificates from '../Modal/ModalCertificates/ModalCertificates';
 import ModalHire from '../Modal/ModalHire/ModalHire';
 import ModalResume from '../Modal/ModalResume/ModalResume';
+
 // import Rates from '../../projects/src/App';
 // import '../../css/components/App/App.css';
 
