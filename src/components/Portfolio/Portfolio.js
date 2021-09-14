@@ -4,14 +4,19 @@ import React, { useState } from 'react';
 
 
 function Portfolio(props) {
-    const portfolio = React.createRef();
-
+    const appRef = React.createRef();
     
+
+    const openApp = (event) => { 
+        event.preventDefault();
+        let data = appRef.current.getAttribute('data-app');
+        props.setModal(data);
+    }
     return (
         <>
-        <div className={`portfolio-content__column ${props.cssHide}`} data-category={props.category}>
-            <div className="portfolio-content__item portfolio-item">
-                <Link to="/portfolio" className="portfolio-item__link">
+        <div className={`portfolio-content__column ${props.cssHide}`} data-category={props.category} >
+            <div className="portfolio-content__item portfolio-item" data-app={props.dataId} onClick={openApp} ref={appRef}>
+                <Link to="" className="portfolio-item__link">
                     <picture>
                         <source srcSet={props.imageWebp} type="image/webp" />
                         <img src={props.imagePng} alt={props.altText} />

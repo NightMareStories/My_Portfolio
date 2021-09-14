@@ -4,7 +4,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import {selectPortfolio} from "../store/portfolioSlice";
 
 
-function PortfolioList() {
+function PortfolioList(props) {
     const portfolio = useSelector(selectPortfolio);
     const dispatch = useDispatch();
    
@@ -12,7 +12,7 @@ function PortfolioList() {
     return (
         <>
             
-            {portfolio.map(item => <Portfolio key={item.id} title={item.title} date={item.date} category={item.category} imagePng={item.imagePng} imageWebp={item.imageWebp} altText={item.altText} cssHide={item.cssHide}/>)}
+            {portfolio.map(item => <Portfolio key={item.id} dataId={item.dataId} title={item.title} date={item.date} category={item.category} imagePng={item.imagePng} imageWebp={item.imageWebp} altText={item.altText} cssHide={item.cssHide} modal={props.modal} setModal={props.setModal}/>)}
         </>
     );
 }

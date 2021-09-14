@@ -2,12 +2,15 @@ import './Main.scss';
 import { Link as Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import PortfolioList from '../../containers/PortfolioList';
+import ApplicationsList from '../../containers/ApplicationsList';
+import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
 // import '../../css/components/Main/Main.css';
 
 
 function Main() {
     const portfolioRef = React.createRef();
     const filterActions = React.createRef();
+    const [appData, setAppData] = useState('');
 
     const filter = (event) => {
         event.preventDefault();
@@ -51,6 +54,7 @@ function Main() {
     }
 
     return (
+        <>
         <main className="page">
             <section className="page__intro intro-block _container">
                 <div className="intro-block__content">
@@ -107,217 +111,8 @@ function Main() {
                         <a href="" className="portfolio-nav__filter" data-filter="website">Website</a>
                     </div>
                     <div className="portfolio-block__portfolio portfolio-content" ref={portfolioRef}>
-                        <PortfolioList />
+                        <PortfolioList modal={appData} setModal={setAppData}/>
                     </div>
-                    
-                    {/* <div className="portfolio-block__portfolio portfolio-content" ref={portfolio}>
-                        <div className="portfolio-content__column" data-category="website" >
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column" data-category="app">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column" data-category="website">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column" data-category="app">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column" data-category="website">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column" data-category="app">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="portfolio-content__column non-visible" data-category="app" >
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column non-visible" data-category="app">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column non-visible" data-category="app">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/react-exchange-rates-img.webp" type="image/webp" />
-                                        <img src="img/react-exchange-rates-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column non-visible" data-category="website">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column non-visible" data-category="website">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="portfolio-content__column non-visible" data-category="website">
-                            <div className="portfolio-content__item portfolio-item">
-                                <Link to="/portfolio" className="portfolio-item__link">
-                                    <picture>
-                                        <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                                        <img src="img/sport-shop-img.png" alt="" />
-                                    </picture>
-                                </Link>
-                                <div className="portfolio-item__text portfolio-text">
-                                    <div className="portfolio-text__category">Category</div>
-                                    <div className="portfolio-text__title">
-                                        Title
-                                        <time className="portfolio-text__date" dateTime="">Date</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div> */}
                     <div className="portfolio-block__button portfolio-button">
                         <button type="button" className="portfolio-button__btn _btn" onClick={loadMoreWork}>load more work</button>
                     </div>
@@ -463,6 +258,8 @@ function Main() {
                 </div>
             </section>
         </main>
+        <ApplicationsList modal={appData} setModal={setAppData}/>
+    </>
     );
 
 

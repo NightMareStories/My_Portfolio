@@ -18,8 +18,11 @@
     z-index: 1000;
     background-color: rgba($color-primary-black, .5);
     overflow: auto;
+    display: none;
 }
-
+._modal-active {
+    display: block;
+}
 .modal_P-block {
     position: relative;
     width: 100%;

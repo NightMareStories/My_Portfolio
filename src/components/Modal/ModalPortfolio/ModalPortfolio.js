@@ -1,12 +1,23 @@
+import React, {useState} from 'react';
 import './ModalPortfolio.scss';
 import { Link as Link } from 'react-router-dom';
 // import '../../css/components/Footer/Footer.css';
 
-function ModalPortfolio() {
+function ModalPortfolio(props) {
+  const modalP = React.createRef();
+  // {props.modal ? 'modal-portfolio modal-active' : 'modal-portfolio'}
+  // onClick={() => props.setModal(false)}
+  // modal-portfolio
+  // onClick={(e) => e.target.classList.remove('_modal-active')}
+  const closeModal = () => {
+    let dataModal = modalP.current;
+    dataModal.classList.remove('_modal-active');
+  }
+ 
     return (
-      <div className="modal-portfolio">
-        <div className="modal_P modal_P-block">
-          <button className="modal_P-block__close" type="button">
+      <div className={props.dataId === props.modal ? 'modal-portfolio _modal-active' : 'modal-portfolio'} data-id={props.dataId} ref={modalP}>
+        <div className="modal_P modal_P-block" onClick={e => e.stopPropagation()}>
+          <button className="modal_P-block__close" type="button" onClick={closeModal}>
             <picture>
             <img src="img/close-icon.svg" alt="" className="modal_P-block__close_icon"/>
             </picture>
@@ -14,32 +25,30 @@ function ModalPortfolio() {
           <div className="modal_P-block__content modal_P-content">
             <div className="modal_P-content__preview">
               <picture>
-                  <source srcSet="img/sport-shop-img.webp" type="image/webp" />
-                  <img src="img/sport-shop-img.png" alt="" className="modal_P-content__preview_img"/>
+                  <source srcSet={props.imageWebp} type="image/webp" />
+                  <img src={props.imagePng} alt={props.altText} className="modal_P-content__preview_img"/>
               </picture>
             </div>
             <div className="modal_P-content__description">
               <div className="modal_P-content__header">
-                <h3 className="modal_P-content__title">Sport Shop</h3>
+                <h3 className="modal_P-content__title">{props.title}</h3>
                 <div className="modal_P-content__info-tag">
-                    Site <span>|</span> 2021
+                    {props.category} <span>|</span> {props.year}
                 </div>
               </div>
               <div className="modal_P-content__tech">
                 <div className="modal_P-content__dev">Developed by: </div>
-                <div className="modal_P-content__by">HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider</div>
+                <div className="modal_P-content__by">{props.devTools}</div>
               </div>
               <div className="modal_P-content__text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magni est praesentium, eum sapiente explicabo dolor similique esse labore id adipisci. Tempora vel modi explicabo doloremque velit. Nam, quibusdam eum.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem voluptatem dignissimos quam est quaerat quod praesentium maiores? Ea recusandae culpa ex dicta, odit a quia natus quidem. Cumque, sed labore!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magni est praesentium, eum sapiente explicabo dolor similique esse labore id adipisci. Tempora vel modi explicabo doloremque velit. Nam, quibusdam eum.</p>
+                {props.description}
               </div>
             </div>
             <div className="modal_P-content__footer">
               <div className="modal_P-content__links modal-links">
                 <button className="modal-links__start">Start App</button>
                 {/* <button className="modal-links__git"> */}
-                  <a href="https://github.com/NightMareStories/Sport-shop" className="modal-links__git">https://github.com/NightMareStories/Sport-shop</a>
+                  <a href={props.gitLink} className="modal-links__git">{props.gitLink}</a>
                   {/* </button> */}
               </div>
               <div className="modal_P-content__slides slides-buttons">
