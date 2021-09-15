@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {useSelector, useDispatch} from "react-redux";
-import ModalPortfolio from "../components/Modal/ModalPortfolio/ModalPortfolio";
-import {selectApplications} from "../store/applicationsSlice";
+import ModalPortfolio from "../../components/Modal/ModalPortfolio/ModalPortfolio";
+import {selectApplications} from "../../store/portfolio/applicationsSlice";
 
 
 function ApplicationsList(props) {

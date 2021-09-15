@@ -18,10 +18,20 @@
     z-index: 1000;
     background-color: rgba($color-primary-black, .5);
     overflow: auto;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transform: scale(0);
 }
 ._modal-active {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+} 
+._modal-active-content {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
 .modal_P-block {
     position: relative;
@@ -29,6 +39,8 @@
     max-width: 1200px;
     margin: auto;
     background-color: $color-primary-white;
+    transform: scale(1);
+    transition: 0.4s all ease;
     &__close {
         background: none;
         border: 0;

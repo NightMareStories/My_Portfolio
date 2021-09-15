@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import portfolioData from "../data/portfolioData";
+import portfolioData from "../../data/portfolio/portfolioData";
 
 export const portfolioSlice = createSlice({
     name : 'portfolio',

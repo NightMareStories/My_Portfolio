@@ -1,9 +1,11 @@
 import './Main.scss';
 import { Link as Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import PortfolioList from '../../containers/PortfolioList';
-import ApplicationsList from '../../containers/ApplicationsList';
+import PortfolioList from '../../containers/portfolio/PortfolioList';
+import ApplicationsList from '../../containers/portfolio/ApplicationsList';
 import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
+import CertificatesList from '../../containers/certificates/CertificatesList';
+import ModalCertificates from '../Modal/ModalCertificates/ModalCertificates';
 // import '../../css/components/Main/Main.css';
 
 
@@ -11,6 +13,7 @@ function Main() {
     const portfolioRef = React.createRef();
     const filterActions = React.createRef();
     const [appData, setAppData] = useState('');
+    const [coverData, setCoverData] = useState('');
 
     const filter = (event) => {
         event.preventDefault();
@@ -148,116 +151,11 @@ function Main() {
                     <div className="certificates-title__text">My progress in learning Front-End Development</div>
                 </div>
                 <div className="certificates-block__content certificates-content">
-                    <div className="certificates-content__column">
-                        <div className="certificates-content__item">
-                            <div className="certificates-content__certificate">
-                                <time className="certificates-content__date">21 june<br/> 2020</time>
-                                <a href="">
-                                    <picture>
-                                        <source srcSet="img/javascript-img.webp" type="image/webp" />
-                                        <img src="img/javascript-img.png" alt="" />    
-                                    </picture>
-                                </a>
-                            </div>
-                            <div className="certificates-content__text">
-                                
-                                <h4 className="certificates-content__title"><a href="">JavaScript 2.0</a></h4>
-                                <div className="certificates-content__category">JavaScript</div>
-                                <div className="certificates-content__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
-                                </div>
-                            </div>
-                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
-                        </div>
-                    </div>
-                    <div className="certificates-content__column">
-                    <div className="certificates-content__item">
-                            <div className="certificates-content__certificate">
-                                <time className="certificates-content__date">27 august<br/> 2020</time>
-                                <a href="">
-                                    <picture>
-                                        <source srcSet="img/reactjs-lite-img.webp" type="image/webp" />
-                                        <img src="img/reactjs-lite-img.png" alt="" />    
-                                    </picture>
-                                </a>
-                            </div>
-                            <div className="certificates-content__text">
-                                
-                                <h4 className="certificates-content__title"><a href="">React JS Lite Level</a></h4>
-                                <div className="certificates-content__category">React JS</div>
-                                <div className="certificates-content__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
-                                </div>
-                            </div>
-                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
-                        </div>
-                    </div>
-                    <div className="certificates-content__column">
-                        <div className="certificates-content__item">
-                            <div className="certificates-content__certificate">
-                                <time className="certificates-content__date">15 august<br/> 2020</time>
-                                <a href="">
-                                    <picture>
-                                        <source srcSet="img/javascript-oop-img.webp" type="image/webp" />
-                                        <img src="img/javascript-oop-img.png" alt="" />    
-                                    </picture>
-                                </a>
-                            </div>
-                            <div className="certificates-content__text">
-                                <h4 className="certificates-content__title"><a href="">ООП в JavaScript</a></h4>
-                                <div className="certificates-content__category">JavaScript</div>
-                                <div className="certificates-content__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
-                                </div>
-                            </div>
-                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
-                        </div>
-                    </div>
-                    <div className="certificates-content__column">
-                    <div className="certificates-content__item">
-                            <div className="certificates-content__certificate">
-                                <time className="certificates-content__date">12 april<br/> 2021</time>
-                                <a href="">
-                                    <picture>
-                                        <source srcSet="img/javascript-arrays-img.webp" type="image/webp" />
-                                        <img src="img/javascript-arrays-img.png" alt="" />    
-                                    </picture>
-                                </a>
-                            </div>
-                            <div className="certificates-content__text">           
-                                <h4 className="certificates-content__title"><a href="">Array methods in JavaScript</a></h4>
-                                <div className="certificates-content__category">JavaScript</div>
-                                <div className="certificates-content__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
-                                </div>
-                            </div>
-                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
-                        </div>
-                    </div>
-                    <div className="certificates-content__column">
-                    <div className="certificates-content__item">
-                            <div className="certificates-content__certificate">
-                                <time className="certificates-content__date">13 august<br/> 2021</time>
-                                <a href="">
-                                    <picture>
-                                        <source srcSet="img/reactjs-img.webp" type="image/webp" />
-                                        <img src="img/reactjs-img.png" alt="" />    
-                                    </picture>
-                                </a>
-                            </div>
-                            <div className="certificates-content__text">
-                                <h4 className="certificates-content__title"><a href="">React JS</a></h4>
-                                <div className="certificates-content__category">React JS</div>
-                                <div className="certificates-content__description">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus ex eligendi, sequi totam, nam explicabo ea officiis officia voluptatem non, perferendis corrupti rerum impedit. Exercitationem distinctio ex ut expedita?</p>
-                                </div>
-                            </div>
-                            <Link to="/certificates" className="certificates-content__button _btn">read more</Link>
-                        </div>
-                    </div>
+                    <CertificatesList modal={coverData} setModal={setCoverData}/>
                 </div>
-            </section>
-        </main>
+                
+ </section>
+            </main>
         <ApplicationsList modal={appData} setModal={setAppData}/>
     </>
     );

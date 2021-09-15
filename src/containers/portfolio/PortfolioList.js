@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {useSelector, useDispatch} from "react-redux";
-import Portfolio from "../components/Portfolio/Portfolio";
-import {selectPortfolio} from "../store/portfolioSlice";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import {selectPortfolio} from "../../store/portfolio/portfolioSlice";
 
 
 function PortfolioList(props) {

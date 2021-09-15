@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import portfolioReducer from "./portfolioSlice";
-import applicationsReducer from "./applicationsSlice";
+import portfolioReducer from "./portfolio/portfolioSlice";
+import applicationsReducer from "./portfolio/applicationsSlice";
+import certificatesReducer from "./certificates/certificatesSlice";
+import coverReducer  from "./certificates/coverSlice";
 
 export default configureStore({
     reducer : {
         portfolio : portfolioReducer,
-        applications : applicationsReducer
+        applications : applicationsReducer,
+        certificates : certificatesReducer,
+        cover : coverReducer
     },
 });

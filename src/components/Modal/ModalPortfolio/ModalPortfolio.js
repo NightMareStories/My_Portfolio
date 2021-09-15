@@ -9,14 +9,17 @@ function ModalPortfolio(props) {
   // onClick={() => props.setModal(false)}
   // modal-portfolio
   // onClick={(e) => e.target.classList.remove('_modal-active')}
+  // modal_P modal_P-block
   const closeModal = () => {
     let dataModal = modalP.current;
     dataModal.classList.remove('_modal-active');
+    document.body.classList.remove('no-scroll'); // body scroll on when modal is closed
+    props.setModal('');
   }
  
     return (
-      <div className={props.dataId === props.modal ? 'modal-portfolio _modal-active' : 'modal-portfolio'} data-id={props.dataId} ref={modalP}>
-        <div className="modal_P modal_P-block" onClick={e => e.stopPropagation()}>
+      <div className={props.dataId === props.modal ? 'modal-portfolio _modal-active' : 'modal-portfolio'} data-id={props.dataId} ref={modalP} onClick={closeModal}>
+        <div className={props.dataId === props.modal ? 'modal_P modal_P-block _modal-active-content' : 'modal_P modal_P-block'} onClick={e => e.stopPropagation()}>
           <button className="modal_P-block__close" type="button" onClick={closeModal}>
             <picture>
             <img src="img/close-icon.svg" alt="" className="modal_P-block__close_icon"/>

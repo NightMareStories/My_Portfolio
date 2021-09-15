@@ -9,6 +9,7 @@ function Portfolio(props) {
 
     const openApp = (event) => { 
         event.preventDefault();
+        document.body.classList.add('no-scroll'); //body scroll off when modal is open
         let data = appRef.current.getAttribute('data-app');
         props.setModal(data);
     }
