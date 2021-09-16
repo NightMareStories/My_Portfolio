@@ -51,7 +51,7 @@ function ModalPortfolio(props) {
               <div className="modal_P-content__links modal-links">
                 <button className="modal-links__start">Start App</button>
                 {/* <button className="modal-links__git"> */}
-                  <a href={props.gitLink} className="modal-links__git">{props.gitLink}</a>
+                  <a href={props.gitLink} target="_blank" className="modal-links__git" rel="noopener noreferrer">{props.gitLink}</a>
                   {/* </button> */}
               </div>
               <div className="modal_P-content__slides slides-buttons">

@@ -5,7 +5,13 @@ const arrData = [
         title : 'React JS',
         date : '13-08 2021',
         category : 'React JS',
-        description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro.',
+        description : 
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+        </>,
         imagePng : './img/reactjs-img.png',
         imageWebp : './img/reactjs-img.webp',
         altText : 'reactjs-img',
@@ -16,7 +22,13 @@ const arrData = [
         title : 'Array Methods In JavaScript',
         date : '12-04 2021',
         category : 'JavaScript ES6',
-        description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro.',
+        description : 
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+        </>,
         imagePng : './img/javascript-arrays-img.png',
         imageWebp : './img/javascript-arrays-img.webp',
         altText : 'javascript-arrays-img',
@@ -27,7 +39,13 @@ const arrData = [
         title : 'OOP In JavaScript',
         date : '15-10 2020',
         category : 'JavaScript ES6',
-        description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro.',
+        description : 
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+        </>,
         imagePng : './img/javascript-oop-img.png',
         imageWebp : './img/javascript-oop-img.webp',
         altText : 'javascript-oop-img',
@@ -38,7 +56,13 @@ const arrData = [
         title : 'React Lite Level',
         date : '27-08 2020',
         category : 'React JS',
-        description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro.',
+        description : 
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+        </>,
         imagePng : './img/reactjs-lite-img.png',
         imageWebp : './img/reactjs-lite-img.webp',
         altText : 'reactjs-lite-img',
@@ -49,7 +73,13 @@ const arrData = [
         title : 'JavaScript 2.0',
         date : '21-06 2020',
         category : 'JavaScript ES6',
-        description : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat id assumenda quia in necessitatibus magni est ex cupiditate consequatur voluptatum animi, iure, accusantium corrupti, voluptatibus quod eos eveniet nemo porro.',
+        description : 
+        <>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
+        </>,
         imagePng : './img/javascript-img.png',
         imageWebp : './img/javascript-img.webp',
         altText : 'javascript-img',

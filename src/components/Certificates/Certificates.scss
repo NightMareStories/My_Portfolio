@@ -43,6 +43,7 @@
      &__certificate {
          position: relative;
          margin-bottom: 20px;
+         cursor: pointer;
          img {
              width: 370px;
              height: 300px;
@@ -95,6 +96,10 @@
          font-family: $font-light;
          color: $color-primary-grey;
          line-height: 2;
+         display: -webkit-box;
+         -webkit-line-clamp: 6;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
      }
  }
 

@@ -65,6 +65,16 @@ h1, h2, h3, h4, h5, h6 {
             
         }
 }
+._modal-active {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+} 
+._modal-active-content {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
 
 //=======================================================
 

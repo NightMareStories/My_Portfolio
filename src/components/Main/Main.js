@@ -5,7 +5,9 @@ import PortfolioList from '../../containers/portfolio/PortfolioList';
 import ApplicationsList from '../../containers/portfolio/ApplicationsList';
 import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
 import CertificatesList from '../../containers/certificates/CertificatesList';
+import CoverList from '../../containers/certificates/CoverList';
 import ModalCertificates from '../Modal/ModalCertificates/ModalCertificates';
+
 // import '../../css/components/Main/Main.css';
 
 
@@ -157,6 +159,7 @@ function Main() {
  </section>
             </main>
         <ApplicationsList modal={appData} setModal={setAppData}/>
+        <CoverList modal={coverData} setModal={setCoverData}/>
     </>
     );
 

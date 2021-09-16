@@ -12,7 +12,7 @@ function CoverList(props) {
     return (
         <>
             
-            {cover.map(item => <ModalCertificates key={item.id} dataId={item.dataId} title={item.title} year={item.year} category={item.category} devTools={item.devTools} description={item.description} gitLink={item.gitLink} imagePng={item.imagePng} imageWebp={item.imageWebp} altText={item.altText} modal={props.modal} setModal={props.setModal}/>)}
+            {cover.map(item => <ModalCertificates key={item.id} dataId={item.dataId} title={item.title} year={item.year} category={item.category} studiedTopics={item.studiedTopics} description={item.description} link={item.link} imagePng={item.imagePng} imageWebp={item.imageWebp} altText={item.altText} modal={props.modal} setModal={props.setModal}/>)}
         </>
     );
 }

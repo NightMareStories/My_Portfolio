@@ -6,8 +6,7 @@ import React, { useState } from 'react';
 function Portfolio(props) {
     const appRef = React.createRef();
     
-
-    const openApp = (event) => { 
+    const openModal = (event) => { 
         event.preventDefault();
         document.body.classList.add('no-scroll'); //body scroll off when modal is open
         let data = appRef.current.getAttribute('data-app');
@@ -16,8 +15,8 @@ function Portfolio(props) {
     return (
         <>
         <div className={`portfolio-content__column ${props.cssHide}`} data-category={props.category} >
-            <div className="portfolio-content__item portfolio-item" data-app={props.dataId} onClick={openApp} ref={appRef}>
-                <Link to="" className="portfolio-item__link">
+            <div className="portfolio-content__item portfolio-item" data-app={props.dataId} onClick={openModal} ref={appRef}>
+                <Link to="/" className="portfolio-item__link">
                     <picture>
                         <source srcSet={props.imageWebp} type="image/webp" />
                         <img src={props.imagePng} alt={props.altText} />
