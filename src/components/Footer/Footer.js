@@ -3,7 +3,7 @@ import './Footer.scss';
 import { Link as Link } from 'react-router-dom';
 // import '../../css/components/Footer/Footer.css';
 
-function Footer() {
+function Footer(props) {
     return (
         <footer className="footer">
             <div className="footer__content content-footer _container">
@@ -39,7 +39,7 @@ function Footer() {
                             </Link>
                         </div>
                     </div>
-                    <Nav />
+                    <Nav modal={props.modal} setModal={props.setModal}/>
                 </div>
                
             </div>

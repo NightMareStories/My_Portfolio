@@ -2,7 +2,7 @@ import Nav from './Nav/Nav';
 import './Header.scss';
 // import '../../css/components/Header/Header.css';
 
-function Header() {
+function Header(props) {
     return (
         <>
             <header className="header">
@@ -25,7 +25,7 @@ function Header() {
                             </div>
                         </div>
                         <div className="top-header__column header-nav">
-                            <Nav />
+                            <Nav modal={props.modal} setModal={props.setModal}/>
                         </div>
                     </div>
                 </div>

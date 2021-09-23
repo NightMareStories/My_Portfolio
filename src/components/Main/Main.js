@@ -3,19 +3,20 @@ import { Link as Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import PortfolioList from '../../containers/portfolio/PortfolioList';
 import ApplicationsList from '../../containers/portfolio/ApplicationsList';
-import ModalPortfolio from '../Modal/ModalPortfolio/ModalPortfolio';
 import CertificatesList from '../../containers/certificates/CertificatesList';
 import CoverList from '../../containers/certificates/CoverList';
-import ModalCertificates from '../Modal/ModalCertificates/ModalCertificates';
+import ModalHire from '../Modal/ModalHire/ModalHire';
+import ModalResume from '../Modal/ModalResume/ModalResume';
 
 // import '../../css/components/Main/Main.css';
 
 
-function Main() {
+function Main(props) {
     const portfolioRef = React.createRef();
     const filterActions = React.createRef();
     const [appData, setAppData] = useState('');
     const [coverData, setCoverData] = useState('');
+    
 
     const filter = (event) => {
         event.preventDefault();
@@ -58,6 +59,12 @@ function Main() {
         }
     }
 
+    const openModal = (event) => {
+        event.preventDefault();
+        let data = event.target.getAttribute('data-id');
+        document.body.classList.add('no-scroll'); //body scroll off when modal is open
+        props.setModal(data);
+    }
     return (
         <>
         <main className="page">
@@ -94,8 +101,8 @@ function Main() {
                             </Link>
                         </div>
                         <div className="info-block__buttons info-buttons">
-                            <Link to="/contacts" className="info-buttons__button _btn">HIRE ME</Link>
-                            <Link to="/profile" className="info-buttons__button _btn">SEE MY RESUME</Link>
+                            <Link to="/" className="info-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</Link>
+                            <Link to="/" className="info-buttons__button _btn" data-id="resume" onClick={openModal}>SEE MY RESUME</Link>
                         </div>
                     </div>
                     <div className="intro-block__picture">
@@ -141,8 +148,8 @@ function Main() {
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, pariatur enim. Aspernatur a perspiciatis quia, omnis magnam impedit autem ipsum corrupti possimus obcaecati neque velit, dicta, blanditiis hic deleniti sed!</p>
                         </div>
                         <div className="about-text__button about-buttons">
-                            <a href="" className="about-buttons__button _btn">HIRE ME</a>
-                            <a href="" className="about-buttons__button _btn">SEE MY RESUME</a>
+                            <a href="" className="about-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</a>
+                            <a href="" className="about-buttons__button _btn"  data-id="resume" onClick={openModal}>SEE MY RESUME</a>
                         </div>
                     </div>
                 </div>
@@ -160,6 +167,8 @@ function Main() {
             </main>
         <ApplicationsList modal={appData} setModal={setAppData}/>
         <CoverList modal={coverData} setModal={setCoverData}/>
+        <ModalHire modal={props.modal} setModal={props.setModal}/>
+        <ModalResume modal={props.modal} setModal={props.setModal}/>
     </>
     );
 

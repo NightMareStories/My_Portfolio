@@ -1,15 +1,10 @@
 import React, {useState} from 'react';
 import './ModalPortfolio.scss';
 import { Link as Link } from 'react-router-dom';
-// import '../../css/components/Footer/Footer.css';
 
 function ModalPortfolio(props) {
   const modalP = React.createRef();
-  // {props.modal ? 'modal-portfolio modal-active' : 'modal-portfolio'}
-  // onClick={() => props.setModal(false)}
-  // modal-portfolio
-  // onClick={(e) => e.target.classList.remove('_modal-active')}
-  // modal_P modal_P-block
+
   const closeModal = () => {
     let dataModal = modalP.current;
     dataModal.classList.remove('_modal-active');

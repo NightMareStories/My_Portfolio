@@ -1,12 +1,22 @@
+import React, {useState} from 'react';
 import './ModalHire.scss';
 import { Link as Link } from 'react-router-dom';
-// import '../../css/components/Footer/Footer.css';
+import SocialLinksModalList from '../../../containers/socialLinks/SocialLinksModalList';
 
-function ModalHire() {
+
+function ModalHire(props) {
+    const modalH = React.createRef();
+
+    const closeModal = () => {
+        let dataModal = modalH.current;
+        dataModal.classList.remove('_modal-active');
+        document.body.classList.remove('no-scroll'); // body scroll on when modal is closed
+        props.setModal('');
+    }
     return (
-        <div className="modal-hire">
-             <div className="modal_H modal_H-block">
-                <button className="modal_H-block__close" type="button">
+        <div className={props.modal === 'hire' ? 'modal-hire _modal-active' : 'modal-hire'} data-id={props.dataId} ref={modalH} onClick={closeModal}>
+             <div className={props.dataId === props.modal ? 'modal_H modal_H-block _modal-active-content' : 'modal_H modal_H-block'} onClick={e => e.stopPropagation()}>
+                <button className="modal_H-block__close" type="button" onClick={closeModal}>
                     <picture>
                         <img src="img/close-icon.svg" alt="" className="modal_H-block__close_icon"/>
                     </picture>
@@ -16,42 +26,10 @@ function ModalHire() {
                         <h3 className="modal_H-content__title">Please, сontact me in any way convenient for you!</h3>
                     </div>
                     <div className="modal_H-content__contacts social-contacts">
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/telegram-icon.webp" type="image/webp" />
-                                <img src="img/telegram-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/whatsapp-icon.webp" type="image/webp" />
-                                <img src="img/whatsapp-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/gmail-icon.webp" type="image/webp" />
-                                <img src="img/gmail-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/yandex-icon.webp" type="image/webp" />
-                                <img src="img/yandex-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/headhunter-icon.webp" type="image/webp" />
-                                <img src="img/headhunter-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
-                        <a href="" className="social-contacts__link">
-                            <picture>
-                                <source srcSet="img/linkedin-icon.webp" type="image/webp" />
-                                <img src="img/linkedin-icon.png" alt="" className="social-contacts__link_icon"/>
-                            </picture>
-                        </a>
+                       <ul>
+                            <SocialLinksModalList modal={props.modal} setModal={props.setModal}/>
+                        </ul>
+                        
                     </div>
                     <div className="modal_H-content__footer side-text">
                         <div className="side-text__hired">Thank you for your time!</div>

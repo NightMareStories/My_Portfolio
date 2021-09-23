@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Header from '../Header/Header';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Main from '../Main/Main';
@@ -10,16 +11,18 @@ import Footer from '../Footer/Footer';
                 </picture> */
 
 function App() {
+    const [hireResumeData, setHireResumeData] = useState('');
+
     return (
         <>
             <Router>
-                <Header />
+                <Header modal={hireResumeData} setModal={setHireResumeData}/>
                 <Switch>
                 
                 </Switch>
-                <Main />
+                <Main modal={hireResumeData} setModal={setHireResumeData}/>
                 
-                <Footer />
+                <Footer modal={hireResumeData} setModal={setHireResumeData}/>
 
             </Router>
 

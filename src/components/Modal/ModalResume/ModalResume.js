@@ -1,12 +1,21 @@
+import React, {useState} from 'react';
 import './ModalResume.scss';
 import { Link as Link } from 'react-router-dom';
-// import '../../css/components/Footer/Footer.css';
+import SocialLinksModalList from '../../../containers/socialLinks/SocialLinksModalList';
 
-function ModalResume() {
+function ModalResume(props) {
+    const modalR = React.createRef();
+
+    const closeModal = () => {
+        let dataModal = modalR.current;
+        dataModal.classList.remove('_modal-active');
+        document.body.classList.remove('no-scroll'); // body scroll on when modal is closed
+        props.setModal('');
+    }
     return (
-        <div className="modal-resume">
-        <div className="modal_R modal_R-block">
-           <button className="modal_R-block__close" type="button">
+        <div className={props.modal === 'resume' ? 'modal-resume _modal-active' : 'modal-resume'} data-id={props.dataId} ref={modalR} onClick={closeModal}>
+        <div className={props.dataId === props.modal ? 'modal_R modal_R-block _modal-active-content' : 'modal_R modal_R-block'} onClick={e => e.stopPropagation()}>
+           <button className="modal_R-block__close" type="button" onClick={closeModal}>
                <picture>
                    <img src="img/close-icon.svg" alt="" className="modal_R-block__close_icon"/>
                </picture>
@@ -16,18 +25,7 @@ function ModalResume() {
                    <h3 className="modal_R-content__title">Please, if you want to see my resume, follow one of the attached links!</h3>
                </div>
                <div className="modal_R-content__contacts social-contacts">
-                   <a href="" className="social-contacts__link">
-                       <picture>
-                           <source srcSet="img/headhunter-icon.webp" type="image/webp" />
-                           <img src="img/headhunter-icon.png" alt="" className="social-contacts__link_icon"/>
-                       </picture>
-                   </a>
-                   <a href="" className="social-contacts__link">
-                       <picture>
-                           <source srcSet="img/linkedin-icon.webp" type="image/webp" />
-                           <img src="img/linkedin-icon.png" alt="" className="social-contacts__link_icon"/>
-                       </picture>
-                   </a>
+                   <SocialLinksModalList modal={props.modal} setModal={props.setModal}/>
                </div>
                <div className="modal_R-content__footer side-text">
                    <div className="side-text__hired">Thank you!</div>
