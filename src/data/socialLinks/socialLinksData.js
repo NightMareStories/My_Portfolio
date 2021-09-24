@@ -7,6 +7,7 @@ const arrData = {
             link : 'https://telegram-setup.ru',
             imageWebp : 'img/telegram-icon.webp',
             imagePng : 'img/telegram-icon.png',
+            imageSvg : 'img/telegram-icon.svg',
             altText : 'telegram-icon',
         },
         whatsapp : {
@@ -15,6 +16,7 @@ const arrData = {
             link : 'https://www.whatsapp.com',
             imageWebp : 'img/whatsapp-icon.webp',
             imagePng : 'img/whatsapp-icon.png',
+            imageSvg : 'img/whatsapp-icon.svg',
             altText : 'whatsapp-icon',
         },
         gmail : {
@@ -23,6 +25,7 @@ const arrData = {
             link : 'https://gmail.com/mail/help/intl/ru/about.html?de',
             imageWebp : 'img/gmail-icon.webp',
             imagePng : 'img/gmail-icon.png',
+            imageSvg : 'img/gmail-icon.svg',
             altText : 'gmail-icon',
         },
         yandex : {
@@ -31,6 +34,7 @@ const arrData = {
             link : 'https://mail.yandex.ru/',
             imageWebp : 'img/yandex-icon.webp',
             imagePng : 'img/yandex-icon.png',
+            imageSvg : 'img/yandex-icon.svg',
             altText : 'yandex-icon',
         },
         headHunter : {
@@ -39,6 +43,7 @@ const arrData = {
             link : 'https://hh.ru',
             imageWebp : 'img/headhunter-icon.webp',
             imagePng : 'img/headhunter-icon.png',
+            imageSvg : 'img/headhunter-icon.svg',
             altText : 'headhunter-icon',
         },
         linkedIn : {
@@ -47,6 +52,7 @@ const arrData = {
             link : 'https://www.linkedin.cn',
             imageWebp : 'img/linkedin-icon.webp',
             imagePng : 'img/linkedin-icon.png',
+            imageSvg : 'img/linkedin-icon.svg',
             altText : 'linkedin-icon',
         }
     },

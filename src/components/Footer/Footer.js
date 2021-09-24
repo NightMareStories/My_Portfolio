@@ -1,7 +1,7 @@
 import Nav from './Nav/Nav';
 import './Footer.scss';
 import { Link as Link } from 'react-router-dom';
-// import '../../css/components/Footer/Footer.css';
+import SocialLinksFooterList from '../../containers/socialLinks/SocialLinksFooterList';
 
 function Footer(props) {
     return (
@@ -13,30 +13,9 @@ function Footer(props) {
                             &copy; 2021 Poteryaev Aleksandr
                         </div>
                         <div className="block-footer__social">
-                        <Link to="/" className="block-footer__social_link" target="_blank">
-                                <picture>
-                                    {/* <source srcSet="img/telegram-icon.webp" type="image/webp" /> */}
-                                    <img src="img/telegram-icon.svg" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="block-footer__social_link" target="_blank">
-                                <picture>
-                                    {/* <source srcSet="img/whatsapp-icon.webp" type="image/webp" /> */}
-                                    <img src="img/whatsapp-icon.svg" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="block-footer__social_link" target="_blank">
-                                <picture>
-                                    {/* <source srcSet="img/gmail-icon.webp" type="image/webp" /> */}
-                                    <img src="img/gmail-icon.svg" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="block-footer__social_link" target="_blank">
-                                <picture>
-                                    {/* <source srcSet="img/yandex-icon.webp" type="image/webp" /> */}
-                                    <img src="img/yandex-icon.svg" alt="" />
-                                </picture>
-                            </Link>
+                            <ul>
+                                <SocialLinksFooterList />
+                            </ul>
                         </div>
                     </div>
                     <Nav modal={props.modal} setModal={props.setModal}/>

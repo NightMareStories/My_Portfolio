@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from "react-redux";
 import {selectSocialLinks} from "../../store/socialLinks/socialLinksSlice";
 import SocialLinksModal from "../../components/SocialLinks/SocialLinksModal";
 
-function SocialLinksList(props) {
+function SocialLinksModalList(props) {
     const socialLinks = useSelector(selectSocialLinks);
     const dispatch = useDispatch();
 
@@ -33,4 +33,4 @@ function SocialLinksList(props) {
     );
 }
 
-export default SocialLinksList;
+export default SocialLinksModalList;

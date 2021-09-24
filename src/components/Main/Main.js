@@ -7,6 +7,7 @@ import CertificatesList from '../../containers/certificates/CertificatesList';
 import CoverList from '../../containers/certificates/CoverList';
 import ModalHire from '../Modal/ModalHire/ModalHire';
 import ModalResume from '../Modal/ModalResume/ModalResume';
+import SocialLinksMainList from '../../containers/socialLinks/SocialLinksMainList';
 
 // import '../../css/components/Main/Main.css';
 
@@ -75,30 +76,9 @@ function Main(props) {
                         <div className="info-block__title"><h1>Poteryaev Aleksandr</h1></div>
                         <div className="info-block__text">Front-End Developer</div>
                         <div className="info-block__social social-links">
-                            <Link to="/" className="social-links__link">
-                                <picture>
-                                    <source srcSet="img/telegram-icon.webp" type="image/webp" />
-                                    <img src="img/telegram-icon.png" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="social-links__link">
-                                <picture>
-                                    <source srcSet="img/whatsapp-icon.webp" type="image/webp" />
-                                    <img src="img/whatsapp-icon.png" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="social-links__link">
-                                <picture>
-                                    <source srcSet="img/gmail-icon.webp" type="image/webp" />
-                                    <img src="img/gmail-icon.png" alt="" />
-                                </picture>
-                            </Link>
-                            <Link to="/" className="social-links__link">
-                                <picture>
-                                    <source srcSet="img/yandex-icon.webp" type="image/webp" />
-                                    <img src="img/yandex-icon.png" alt="" />
-                                </picture>
-                            </Link>
+                          <ul>
+                          <SocialLinksMainList /> 
+                          </ul>
                         </div>
                         <div className="info-block__buttons info-buttons">
                             <Link to="/" className="info-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</Link>
