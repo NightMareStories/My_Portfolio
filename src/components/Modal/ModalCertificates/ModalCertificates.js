@@ -13,6 +13,52 @@ function ModalCertificates(props) {
     props.setModal('');
   }
 
+  const nextSlide = () => {
+    let data = props.data;
+    let count;
+    let k = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      k++;
+      count = 'r' + k; 
+      
+      if (data[i].dataId === props.modal) {
+        if (k === data.length) {
+          k = 1;
+          count = 'r' + k;
+          props.setModal(count);
+       }
+        else {
+          count = 'r' + (k + 1);
+          props.setModal(count);
+       }
+      }
+    }
+  }
+
+  const prevSlide = () => {
+    let data = props.data;
+    let count;
+    let k = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      k++;
+      count = 'r' + k; 
+      
+      if (data[i].dataId === props.modal) {
+        if (k === 1) {
+          k = data.length;
+          count = 'r' + k;
+          props.setModal(count);
+       }
+        else {
+          count = 'r' + (k - 1);
+          props.setModal(count);
+       }
+      }
+    }
+  }
+
     return (
       <div className={props.dataId === props.modal ? 'modal-certificates _modal-active' : 'modal-certificates'} data-id={props.dataId} ref={modalC} onClick={closeModal}>
         <div className={props.dataId === props.modal ? 'modal_C modal_C-block _modal-active-content' : 'modal_C modal_C-block'} onClick={e => e.stopPropagation()}>
@@ -52,13 +98,13 @@ function ModalCertificates(props) {
                   {/* </button> */}
               </div>
               <div className="modal_C-content__slides slides-buttons">
-                <button className="slides-buttons__prev">
+                <button className="slides-buttons__prev" onClick={prevSlide}>
                   <picture>
                     <img src="img/prev-icon.svg" alt="" className="slides-buttons__prev_icon"/>
                   </picture>
                     Prev
                 </button>
-                <button className="slides-buttons__next">
+                <button className="slides-buttons__next" onClick={nextSlide}>
                   Next
                 <picture>
                   <img src="img/next-icon.svg" alt="" className="slides-buttons__next_icon"/>

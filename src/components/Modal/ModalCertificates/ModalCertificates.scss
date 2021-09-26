@@ -18,6 +18,7 @@
     z-index: 1000;
     background-color: rgba($color-primary-black, .5);
     overflow: auto;
+    opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease;
     transform: scale(0);

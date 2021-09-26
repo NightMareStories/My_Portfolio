@@ -11,6 +11,52 @@ function ModalPortfolio(props) {
     document.body.classList.remove('no-scroll'); // body scroll on when modal is closed
     props.setModal('');
   }
+
+  const nextSlide = () => {
+    let data = props.data;
+    let count;
+    let k = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      k++;
+      count = 'a' + k; 
+      
+      if (data[i].dataId === props.modal) {
+        if (k === data.length) {
+          k = 1;
+          count = 'a' + k;
+          props.setModal(count);
+       }
+        else {
+          count = 'a' + (k + 1);
+          props.setModal(count);
+       }
+      }
+    }
+  }
+
+  const prevSlide = () => {
+    let data = props.data;
+    let count;
+    let k = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      k++;
+      count = 'a' + k; 
+      
+      if (data[i].dataId === props.modal) {
+        if (k === 1) {
+          k = data.length;
+          count = 'a' + k;
+          props.setModal(count);
+       }
+        else {
+          count = 'a' + (k - 1);
+          props.setModal(count);
+       }
+      }
+    }
+  }
  
     return (
       <div className={props.dataId === props.modal ? 'modal-portfolio _modal-active' : 'modal-portfolio'} data-id={props.dataId} ref={modalP} onClick={closeModal}>
@@ -50,13 +96,13 @@ function ModalPortfolio(props) {
                   {/* </button> */}
               </div>
               <div className="modal_P-content__slides slides-buttons">
-                <button className="slides-buttons__prev">
+                <button className="slides-buttons__prev" onClick={prevSlide}>
                   <picture>
                     <img src="img/prev-icon.svg" alt="" className="slides-buttons__prev_icon"/>
                   </picture>
                     Prev
                 </button>
-                <button className="slides-buttons__next">
+                <button className="slides-buttons__next" onClick={nextSlide}>
                   Next
                 <picture>
                   <img src="img/next-icon.svg" alt="" className="slides-buttons__next_icon"/>
