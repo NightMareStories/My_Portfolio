@@ -5,6 +5,15 @@ import Main from '../Main/Main';
 import './App.scss';
 import Footer from '../Footer/Footer';
 
+//======================= redux ========================
+
+import store from '../../store';
+import { Provider } from 'react-redux';
+
+
+//======================================================
+
+
 /* <picture>
                     <source srcSet="img/about-text-img.webp" type="image/webp" />
                     <img src="img/about-text-img.png" alt="" />
@@ -15,18 +24,13 @@ function App() {
 
     return (
         <>
-            <Router>
+            <Provider store={store}>
                 <Header modal={hireResumeData} setModal={setHireResumeData}/>
-                <Switch>
-                
-                </Switch>
+             
                 <Main modal={hireResumeData} setModal={setHireResumeData}/>
                 
                 <Footer modal={hireResumeData} setModal={setHireResumeData}/>
-
-            </Router>
-
-
+           </Provider>
         </>
     );
 }

@@ -90,7 +90,7 @@ function ModalPortfolio(props) {
             </div>
             <div className="modal_P-content__footer">
               <div className="modal_P-content__links modal-links">
-                <button className="modal-links__start">Start App</button>
+                <Link to='/exchange-rates' className="modal-links__start">Start App</Link>
                 {/* <button className="modal-links__git"> */}
                   <a href={props.gitLink} target="_blank" className="modal-links__git" rel="noopener noreferrer">{props.gitLink}</a>
                   {/* </button> */}

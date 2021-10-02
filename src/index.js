@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
-
-
-//======================= redux ========================
-
-import store from './store';
-import { Provider } from 'react-redux';
-
-//======================================================
-
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-    <App />
-    </Provider>
+    
+      <Router>
+      <Switch>
+        
+        <App/>
+        
+        
+        
+      </Switch>
+      </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
