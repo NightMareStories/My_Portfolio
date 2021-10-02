@@ -25,7 +25,7 @@ function Header(props) {
                             </div>
                         </div>
                         <div className="top-header__column header-nav">
-                            <Nav modal={props.modal} setModal={props.setModal}/>
+                            <Nav modal={props.modal} setModal={props.setModal} navScroll={props.navScroll} setNavScroll={props.setNavScroll}/>
                         </div>
                     </div>
                 </div>

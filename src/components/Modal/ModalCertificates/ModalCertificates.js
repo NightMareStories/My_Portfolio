@@ -6,7 +6,7 @@ import { Link as Link } from 'react-router-dom';
 function ModalCertificates(props) {
   const modalC = React.createRef();
 
-  const closeModal = () => {
+  const closeModal = (event) => {
     let dataModal = modalC.current;
     dataModal.classList.remove('_modal-active');
     document.body.classList.remove('no-scroll'); // body scroll on when modal is closed

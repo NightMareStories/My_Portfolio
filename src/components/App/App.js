@@ -21,15 +21,16 @@ import { Provider } from 'react-redux';
 
 function App() {
     const [hireResumeData, setHireResumeData] = useState('');
+    const [navScroll, setNavScroll] = useState();
 
     return (
         <>
             <Provider store={store}>
-                <Header modal={hireResumeData} setModal={setHireResumeData}/>
+                <Header modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
              
-                <Main modal={hireResumeData} setModal={setHireResumeData}/>
+                <Main modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
                 
-                <Footer modal={hireResumeData} setModal={setHireResumeData}/>
+                <Footer modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
            </Provider>
         </>
     );

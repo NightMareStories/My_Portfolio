@@ -18,7 +18,7 @@ function Footer(props) {
                             </ul>
                         </div>
                     </div>
-                    <Nav modal={props.modal} setModal={props.setModal}/>
+                    <Nav modal={props.modal} setModal={props.setModal} navScroll={props.navScroll} setNavScroll={props.setNavScroll}/>
                 </div>
                
             </div>

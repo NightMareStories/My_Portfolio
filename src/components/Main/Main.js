@@ -1,6 +1,6 @@
 import './Main.scss';
 import { Link as Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PortfolioList from '../../containers/portfolio/PortfolioList';
 import ApplicationsList from '../../containers/portfolio/ApplicationsList';
 import CertificatesList from '../../containers/certificates/CertificatesList';
@@ -9,15 +9,29 @@ import ModalHire from '../Modal/ModalHire/ModalHire';
 import ModalResume from '../Modal/ModalResume/ModalResume';
 import SocialLinksMainList from '../../containers/socialLinks/SocialLinksMainList';
 
+
 // import '../../css/components/Main/Main.css';
 
 
 function Main(props) {
     const portfolioRef = React.createRef();
     const filterActions = React.createRef();
+    const portfolioScroll = React.createRef();
+    const aboutScroll = React.createRef();
+    const certificatesScroll = React.createRef();
     const [appData, setAppData] = useState('');
     const [coverData, setCoverData] = useState('');
     
+    useEffect(()=>{
+        let portfolioScrollData = portfolioScroll.current;
+        let aboutScrollData = aboutScroll.current;
+        let certificatesScrollData = certificatesScroll.current;
+        let scrollData = [];
+
+        scrollData.push(portfolioScrollData, aboutScrollData, certificatesScrollData);
+        
+        props.setNavScroll(scrollData);
+    },[])
 
     const filter = (event) => {
         event.preventDefault();
@@ -94,7 +108,7 @@ function Main(props) {
                 </div>
             </section>
 
-            <section className="page__portfolio portfolio-block _container">
+            <section className="page__portfolio portfolio-block _container" ref={portfolioScroll} data-id="portfolio">
                 <div className="portfolio-block__content">
                     <h2 className="portfolio-block__title">Portfolio</h2>
                     <div className="portfolio-block__nav portfolio-nav" onClick={filter} ref={filterActions}>
@@ -111,7 +125,7 @@ function Main(props) {
                 </div>
             </section>
 
-            <section className="page__about about-block _container">
+            <section className="page__about about-block _container" ref={aboutScroll} data-id="about">
                 <div className="about-block__content">
                     <div className="about-block__picture">
                         <picture>
@@ -134,7 +148,7 @@ function Main(props) {
                     </div>
                 </div>
             </section>
-            <section className="page__certificates certificates-block _container">
+            <section className="page__certificates certificates-block _container" ref={certificatesScroll} data-id="certificates">
                 <div className="certificates-block__title certificates-title">
                     <h2 className="certificates-title__title">Certificates</h2>
                     <div className="certificates-title__text">My progress in learning Front-End Development</div>
