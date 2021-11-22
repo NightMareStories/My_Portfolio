@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ModalPortfolio.scss';
-import { Link as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ModalPortfolio(props) {
   const modalP = React.createRef();
@@ -63,14 +63,16 @@ function ModalPortfolio(props) {
         <div className={props.dataId === props.modal ? 'modal_P modal_P-block _modal-active-content' : 'modal_P modal_P-block'} onClick={e => e.stopPropagation()}>
           <button className="modal_P-block__close" type="button" onClick={closeModal}>
             <picture>
-            <img src="img/close-icon.svg" alt="" className="modal_P-block__close_icon"/>
+            <img src="img/close-icon.svg" alt="close-icon" className="modal_P-block__close_icon"/>
             </picture>
           </button>
           <div className="modal_P-block__content modal_P-content">
             <div className="modal_P-content__preview">
               <picture>
                   <source srcSet={props.imageWebp} type="image/webp" />
-                  <img src={props.imagePng} alt={props.altText} className="modal_P-content__preview_img"/>
+                  <a href={props.imagePng}>
+                    <img src={props.imagePng} alt={props.altText} className="modal_P-content__preview_img"/>
+                  </a>
               </picture>
             </div>
             <div className="modal_P-content__description">
@@ -91,21 +93,19 @@ function ModalPortfolio(props) {
             <div className="modal_P-content__footer">
               <div className="modal_P-content__links modal-links">
                 <Link to='/exchange-rates' className="modal-links__start">Start App</Link>
-                {/* <button className="modal-links__git"> */}
                   <a href={props.gitLink} target="_blank" className="modal-links__git" rel="noopener noreferrer">{props.gitLink}</a>
-                  {/* </button> */}
               </div>
               <div className="modal_P-content__slides slides-buttons">
                 <button className="slides-buttons__prev" onClick={prevSlide}>
                   <picture>
-                    <img src="img/prev-icon.svg" alt="" className="slides-buttons__prev_icon"/>
+                    <img src="img/prev-icon.svg" alt="prev-icon" className="slides-buttons__prev_icon"/>
                   </picture>
                     Prev
                 </button>
                 <button className="slides-buttons__next" onClick={nextSlide}>
                   Next
                 <picture>
-                  <img src="img/next-icon.svg" alt="" className="slides-buttons__next_icon"/>
+                  <img src="img/next-icon.svg" alt="next-icon" className="slides-buttons__next_icon"/>
               </picture>
               </button>
               </div>

@@ -8,9 +8,6 @@
 //====================== styles ========================
 
 .portfolio-block{
-    &__content {
-    margin: 40px 0px;
-    }
     &__button {
         text-align: center;
         .portfolio-button {
@@ -131,6 +128,59 @@
     font-size: 25px;
     border-radius: 5px;
     box-shadow: 0px 5px 5px rgba($color-primary-black,.40);
+}
+
+//======================================================
+
+
+//======================= media ========================
+
+@media (max-width: 992px) {
+    .portfolio-content {
+        &__column {
+            display: flex;
+            justify-content: center;
+            flex: 0 0 50%;
+        }
+    }
+    .portfolio-item {
+        width: 100%;
+        &__link {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        &__column {
+            flex: 0 0 100%;
+        }
+    }
+    .portfolio-item {
+        width: 370px;
+        &__link {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .portfolio-block {
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio-item {
+        width: 100%;
+    }
 }
 
 //======================================================

@@ -11,6 +11,6 @@ export const portfolioSlice = createSlice({
     },
 });
 
-export const {} = portfolioSlice.actions;
+// export const {} = portfolioSlice.actions;
 export const selectPortfolio = state => state.portfolio.data;
 export default portfolioSlice.reducer;

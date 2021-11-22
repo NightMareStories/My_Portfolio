@@ -60,8 +60,8 @@
         position: relative;
         overflow: hidden;
         &_img {
-            width: 790px;
-            height: 300px;
+            width: 100%;
+            height: auto;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -138,19 +138,15 @@
         font-size: 13px;
         padding: 15px 10px;
         width: 15%;
-        background-color: $color-primary-white;
-        color: $color-primary-black;
-        border: 3px solid $color-primary-white;
+        border-color: rgb(9, 231, 9);
+        background-color: rgb(9, 231, 9);
+        border: 3px solid rgb(9, 231, 9);
+        color: $color-primary-white;
+        border-radius: 25px;
         font-family: $font-bold;
         cursor: pointer;
         text-transform: uppercase;
         transition: all .3s ease;
-        &:hover {
-            border-color: rgb(9, 231, 9);
-            background-color: rgb(9, 231, 9);
-            color: $color-primary-white;
-            border-radius: 25px;
-        }
     }
     &__git {
         padding: 15px 10px;
@@ -160,10 +156,6 @@
         color: $color-primary-white;
         border: 1px solid $color-primary-white;
         transition: all .3s ease;
-        &:hover {
-            background-color: $color-primary-white;
-            color: $color-primary-black;   
-        }
     }
 }
 
@@ -175,19 +167,22 @@
         font-family: $font-regular;
         font-size: 14px;
         text-transform: uppercase;
-        color: $color-primary-white;
-        background: none;
+        color:black;
+            background-color: $color-primary-white;
+            border-color: $color-primary-white;
+        // color: $color-primary-white;
+        // background: none;
         cursor: pointer;
         padding: 15px 10px;
-        border-color: $color-primary-white;
+        // border-color: $color-primary-white;
         border-radius: 25px;
         border: 0;
         transition: all .4s ease;
-        &:hover {
-            color:black;
-            background-color: $color-primary-white;
-            border-color: $color-primary-white;
-        }
+        // &:hover {
+        //     color:black;
+        //     background-color: $color-primary-white;
+        //     border-color: $color-primary-white;
+        // }
     }
     &__prev {
         &_icon {
@@ -199,6 +194,35 @@
         &_icon {
             padding-left: 10px;
             height: 11px;
+        }
+    }
+}
+
+//======================================================
+
+
+//======================= media ========================
+
+@media (max-width: 1200px) {
+    .modal_C-content {
+        flex-direction: column;
+        &__preview {
+            width: 100%;
+            margin: 45px 0px;
+            &_img {
+                left: 0;
+                top: 0;
+                position: relative;
+                transform: none;
+            }
+        }
+        &__description {
+            width: 100%;
+            padding: 0px 20px;
+        }
+        &__footer {
+            flex-direction: column-reverse;
+            align-items: center;
         }
     }
 }

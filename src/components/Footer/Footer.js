@@ -1,6 +1,5 @@
 import Nav from './Nav/Nav';
 import './Footer.scss';
-import { Link as Link } from 'react-router-dom';
 import SocialLinksFooterList from '../../containers/socialLinks/SocialLinksFooterList';
 
 function Footer(props) {

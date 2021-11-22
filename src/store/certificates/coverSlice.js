@@ -11,6 +11,6 @@ export const coverSlice = createSlice({
     },
 });
 
-export const {} = coverSlice.actions;
+// export const {} = coverSlice.actions;
 export const selectCover = state => state.cover.data;
 export default coverSlice.reducer;

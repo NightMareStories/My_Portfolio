@@ -1,6 +1,6 @@
 import './Portfolio.scss';
-import { Link as Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 
 function Portfolio(props) {

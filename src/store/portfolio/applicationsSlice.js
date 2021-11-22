@@ -11,6 +11,6 @@ export const applicationsSlice = createSlice({
     },
 });
 
-export const {} = applicationsSlice.actions;
+// export const {} = applicationsSlice.actions;
 export const selectApplications = state => state.applications.data;
 export default applicationsSlice.reducer;

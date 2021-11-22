@@ -1,7 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ModalCertificates.scss';
-import { Link as Link } from 'react-router-dom';
-// import '../../css/components/Footer/Footer.css';
 
 function ModalCertificates(props) {
   const modalC = React.createRef();
@@ -64,14 +62,16 @@ function ModalCertificates(props) {
         <div className={props.dataId === props.modal ? 'modal_C modal_C-block _modal-active-content' : 'modal_C modal_C-block'} onClick={e => e.stopPropagation()}>
           <button className="modal_C-block__close" type="button" onClick={closeModal}>
             <picture>
-            <img src="img/close-icon.svg" alt="" className="modal_C-block__close_icon"/>
+            <img src="img/close-icon.svg" alt="close-icon" className="modal_C-block__close_icon"/>
             </picture>
           </button>
           <div className="modal_C-block__content modal_C-content">
             <div className="modal_C-content__preview">
               <picture>
                   <source srcSet={props.imageWebp} type="image/webp" />
-                  <img src={props.imagePng} alt="" className="modal_C-content__preview_img"/>
+                  <a href={props.imagePng}>
+                    <img src={props.imagePng} alt={props.altText} className="modal_C-content__preview_img"/>
+                  </a>
               </picture>
             </div>
             <div className="modal_C-content__description">
@@ -91,23 +91,20 @@ function ModalCertificates(props) {
             </div>
             <div className="modal_C-content__footer">
               <div className="modal_C-content__links modal-links">
-                <button className="modal-links__start">Start App</button>
-                {/* <button className="modal-links__git"> */}
                   <a href={props.link} className="modal-links__git" target="_blank"
                     rel="noopener noreferrer">{props.link}</a>
-                  {/* </button> */}
               </div>
               <div className="modal_C-content__slides slides-buttons">
                 <button className="slides-buttons__prev" onClick={prevSlide}>
                   <picture>
-                    <img src="img/prev-icon.svg" alt="" className="slides-buttons__prev_icon"/>
+                    <img src="img/prev-icon.svg" alt="prev-icon" className="slides-buttons__prev_icon"/>
                   </picture>
                     Prev
                 </button>
                 <button className="slides-buttons__next" onClick={nextSlide}>
                   Next
                 <picture>
-                  <img src="img/next-icon.svg" alt="" className="slides-buttons__next_icon"/>
+                  <img src="img/next-icon.svg" alt="next-icon" className="slides-buttons__next_icon"/>
               </picture>
               </button>
               </div>

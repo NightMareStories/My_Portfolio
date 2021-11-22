@@ -11,6 +11,6 @@ export const socialLinksSlice = createSlice({
     },
 });
 
-export const {} = socialLinksSlice.actions;
+// export const {} = socialLinksSlice.actions;
 export const selectSocialLinks = state => state.socialLinks.data;
 export default socialLinksSlice.reducer;

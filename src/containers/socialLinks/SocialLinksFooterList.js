@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import {useSelector, useDispatch} from "react-redux";
+import React from "react";
+import {useSelector} from "react-redux";
 import {selectSocialLinks} from "../../store/socialLinks/socialLinksSlice";
 import SocialLinksFooter from "../../components/SocialLinks/SocialLinksFooter";
 
 function SocialLinksFooterList() {
     const socialLinks = useSelector(selectSocialLinks);
-    const dispatch = useDispatch();
 
 //================================================
 //= converting storage to an array for rendering =

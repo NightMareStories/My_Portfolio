@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ModalResume.scss';
-import { Link as Link } from 'react-router-dom';
 import SocialLinksModalList from '../../../containers/socialLinks/SocialLinksModalList';
 
 function ModalResume(props) {

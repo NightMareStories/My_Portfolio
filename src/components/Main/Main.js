@@ -1,5 +1,5 @@
 import './Main.scss';
-import { Link as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import PortfolioList from '../../containers/portfolio/PortfolioList';
 import ApplicationsList from '../../containers/portfolio/ApplicationsList';
@@ -9,10 +9,6 @@ import ModalHire from '../Modal/ModalHire/ModalHire';
 import ModalResume from '../Modal/ModalResume/ModalResume';
 import SocialLinksMainList from '../../containers/socialLinks/SocialLinksMainList';
 
-
-// import '../../css/components/Main/Main.css';
-
-
 function Main(props) {
     const portfolioRef = React.createRef();
     const filterActions = React.createRef();
@@ -21,7 +17,7 @@ function Main(props) {
     const certificatesScroll = React.createRef();
     const [appData, setAppData] = useState('');
     const [coverData, setCoverData] = useState('');
-    
+
     useEffect(()=>{
         let portfolioScrollData = portfolioScroll.current;
         let aboutScrollData = aboutScroll.current;
@@ -80,6 +76,7 @@ function Main(props) {
         document.body.classList.add('no-scroll'); //body scroll off when modal is open
         props.setModal(data);
     }
+
     return (
         <>
         <main className="page">
@@ -112,9 +109,9 @@ function Main(props) {
                 <div className="portfolio-block__content">
                     <h2 className="portfolio-block__title">Portfolio</h2>
                     <div className="portfolio-block__nav portfolio-nav" onClick={filter} ref={filterActions}>
-                        <a href="" className="portfolio-nav__filter active-filter" data-filter="all">All</a>
-                        <a href="" className="portfolio-nav__filter" data-filter="app">App</a>
-                        <a href="" className="portfolio-nav__filter" data-filter="website">Website</a>
+                        <a href="/" className="portfolio-nav__filter active-filter" data-filter="all">All</a>
+                        <a href="/" className="portfolio-nav__filter" data-filter="app">App</a>
+                        <a href="/" className="portfolio-nav__filter" data-filter="website">Website</a>
                     </div>
                     <div className="portfolio-block__portfolio portfolio-content" ref={portfolioRef}>
                         <PortfolioList modal={appData} setModal={setAppData}/>
@@ -128,10 +125,12 @@ function Main(props) {
             <section className="page__about about-block _container" ref={aboutScroll} data-id="about">
                 <div className="about-block__content">
                     <div className="about-block__picture">
-                        <picture>
-                            <source srcSet="img/logo-img.webp" type="image/webp" />
-                            <img src="img/logo-img.png" alt="" />
-                        </picture>
+                        <div className="about-block__picture_frame">
+                            <picture>
+                                <source srcSet="img/logo-img.webp" type="image/webp" />
+                                <img src="img/logo-img.png" alt="" />
+                            </picture>
+                        </div>
                     </div>
                     <div className="about-block__text about-text">
                         <h2 className="about-text__title">about me</h2>
@@ -142,8 +141,8 @@ function Main(props) {
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, pariatur enim. Aspernatur a perspiciatis quia, omnis magnam impedit autem ipsum corrupti possimus obcaecati neque velit, dicta, blanditiis hic deleniti sed!</p>
                         </div>
                         <div className="about-text__button about-buttons">
-                            <a href="" className="about-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</a>
-                            <a href="" className="about-buttons__button _btn"  data-id="resume" onClick={openModal}>SEE MY RESUME</a>
+                            <a href="/" className="about-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</a>
+                            <a href="/" className="about-buttons__button _btn"  data-id="resume" onClick={openModal}>SEE MY RESUME</a>
                         </div>
                     </div>
                 </div>

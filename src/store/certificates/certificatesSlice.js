@@ -11,6 +11,6 @@ export const certificatesSlice = createSlice({
     },
 });
 
-export const {} = certificatesSlice.actions;
+// export const {} = certificatesSlice.actions;
 export const selectCertificates = state => state.certificates.data;
 export default certificatesSlice.reducer;

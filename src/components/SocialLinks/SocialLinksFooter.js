@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 
 function SocialLinksFooter(props) {
-//img className="social-contacts__link_icon"
+
     return (
         <>
             <a href={props.link}>

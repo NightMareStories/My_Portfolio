@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ModalHire.scss';
-import { Link as Link } from 'react-router-dom';
 import SocialLinksModalList from '../../../containers/socialLinks/SocialLinksModalList';
 
 
