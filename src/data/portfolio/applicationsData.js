@@ -72,14 +72,25 @@ const arrData = [
         id : 'p4a',
         dataId : 'a4',
         title : 'Exchange-Rates',
-        category : 'Site',
+        category : 'App',
         year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
+        devTools : 'HTML5, JavaScriptES6, ReactJS, SCSS, Gulp',
+        description : 
+            <>
+                <p>
+                    "Exchange Rates" is an application written in "ReactJS" using "Class" to create components, made available in "JavaScript ES6". The work of the application is to receive the exchange rate from the API service, and the ability to exchange a specific currency into the euro currency.
+                </p>
+                <p>
+                    When the page is loaded, the application sends a request to the service for issuing a currency value, receives data on currencies, converts and displays this data on the page. Also, data on currencies is sent to the currency calculator, where the user can calculate the amount of any selected currency in euros.
+                </p>
+                <p>
+                    Try it yourself. Enter the amount you need, select a currency from the list, and click on the button. Below you will see the result in Euro currency. The application is adapted for mobile devices.
+                </p>
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Exchange-Rates',
+        imagePng : './img/exchange-rates-img.png',
+        imageWebp : './img/exchange-rates-img.webp',
+        altText : 'exchange-rates-img'
     },
     {
         id : 'p5a',

@@ -38,9 +38,9 @@ const arrData = [
         title : 'Exchange-Rates',
         date : '02-04-2021',
         category : 'app',
-        imagePng : './img/react-exchange-rates-img.png',
-        imageWebp : './img/react-exchange-rates-img.webp',
-        altText : 'react-exchange-rates-img',
+        imagePng : './img/exchange-rates-img.png',
+        imageWebp : './img/exchange-rates-img.webp',
+        altText : 'exchange-rates-img',
         cssHide : ''
     },
     {
