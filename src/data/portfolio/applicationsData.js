@@ -95,28 +95,56 @@ const arrData = [
     {
         id : 'p5a',
         dataId : 'a5',
-        title : 'Sport-Shop',
-        category : 'Site',
-        year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
+        title : 'Cabinet-on-JavaScript',
+        category : 'App',
+        year : '2020',
+        devTools : 'HTML5, JavaScriptES6, PHP, Materialize, OpenServer, Gulp',
+        description : 
+            <>
+                <p>
+                    "Cabinet on JavaScript" is an application written in "JavaScript ES6" and "Php" that uses the server-side development environment "OpenServer" and the "Materialize" framework to style the application. . It is an opportunity for a user to register in the system or log in and enter his personal account. In his personal account, he can always change his personal data or log out of it.
+                </p>
+                <p>
+                    This application has a "front-end" and "back-end" part and works through "ajax requests". The operation of the application looks like this: the user enters his data into the form, confirms the entered data, the data is sent to the server in the database, and with further authorization, the user enters his personal account.
+                </p>
+                <p>
+                    In the personal account for an authorized user, his personal data are loaded from the database and displayed in the appropriate fields. When the user's personal data changes, the updated data is also sent to the server in the database, and when you re-enter your personal account, the new personal data of the user that he changed is loaded.
+                </p>
+                <p>
+                    Also, the user can log out from the personal account and then the username and password will have to be entered again. This application actively used "cookies" to interact with the personal account, as well as to update its data.
+                </p> 
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Cabinet-on-JavaScript',
+        imagePng : './img/cabinet-on-javascript-img.png',
+        imageWebp : './img/cabinet-on-javascript-img.webp',
+        altText : 'cabinet-on-javascript-img'
     },
     {
         id : 'p6a',
         dataId : 'a6',
-        title : 'Exchange-Rates',
-        category : 'Site',
+        title : 'Cart-of-Watches',
+        category : 'App',
         year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
+        devTools : 'HTML5, JavaScriptES6, SCSS, OOP, Gulp, LocalStorage',
+        description : 
+            <>
+                <p>
+                    "Cart of watches" is an application written in "JavaScript" using "LocalStorage" browser and using "Classes" made available in "ES6" edition. This application using "OOP" allows you to add items to the cart, increase, decrease or remove them from the cart, while counting their amount and quantity.
+                </p>
+                <p>
+                    How it works? In the catalog of goods you choose the watch you like, add it to the basket. At the same time, an object with the goods that you added to the cart is created in the user's browser, in the local storage. The cart itself retrieves your items and quantities from the browser's local storage and displays them on the page.
+                </p>
+                <p>
+                    As a result, by going to the basket, you will see all the products that you have added and you can increase or decrease their quantity or remove them from the basket.
+                </p>
+                <p>
+                    In the project, I used the "SCSS" preprocessor using the "BEM" CSS-class methodology and the "Gulp" project builder. Also, the project is fully adapted for mobile devices.
+                </p>
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Cart-of-watches',
+        imagePng : './img/cart-of-watches-img.png',
+        imageWebp : './img/cart-of-watches-img.webp',
+        altText : 'cart-of-watches-img'
     },
     {
         id : 'p7a',
