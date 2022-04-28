@@ -65,39 +65,5 @@ const arrData = [
         altText : 'cart-of-watches-img',
         cssHide : ''
     },
-    {
-        id : 'p7',
-        dataId : 'a7',
-        title : 'Sport-Shop',
-        date : '02-02-2021',
-        category : 'website',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img',
-        cssHide : 'non-visible'
-    },
-    {
-        id : 'p8',
-        dataId : 'a8',
-        title : 'Exchange-Rates',
-        date : '02-04-2021',
-        category : 'app',
-        imagePng : './img/react-exchange-rates-img.png',
-        imageWebp : './img/react-exchange-rates-img.webp',
-        altText : 'react-exchange-rates-img',
-        cssHide : 'non-visible'
-    },
-    {
-        id : 'p9',
-        dataId : 'a9',
-        title : 'Exchange-Rates',
-        date : '02-04-2021',
-        category : 'app',
-        imagePng : './img/react-exchange-rates-img.png',
-        imageWebp : './img/react-exchange-rates-img.webp',
-        altText : 'react-exchange-rates-img',
-        cssHide : 'non-visible'
-    },
-   
 ]
 export default arrData;

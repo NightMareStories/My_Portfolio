@@ -8,9 +8,9 @@ const arrData = [
         studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
         description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
         link : 'https://itgid.info/course/reactjs',
-        imagePng : './img/reactjs-img.png',
-        imageWebp : './img/reactjs-img.webp',
-        altText : 'reactjs-img'
+        imagePng : './img/react.js-img.png',
+        imageWebp : './img/react.js-img.webp',
+        altText : 'react.js-img'
     },
     {
         id : 'c2r',
@@ -21,9 +21,9 @@ const arrData = [
         studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
         description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
         link : 'https://itgid.info/course/arraymethod',
-        imagePng : './img/javascript-arrays-img.png',
-        imageWebp : './img/javascript-arrays-img.webp',
-        altText : 'javascript-arrays-img'
+        imagePng : './img/js-array-methods-img.png',
+        imageWebp : './img/js-array-methods-img.webp',
+        altText : 'js-array-methods-img'
     },
     {
         id : 'c3r',
@@ -47,9 +47,9 @@ const arrData = [
         studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
         description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
         link : 'https://itgid.info/course/react-lite-level',
-        imagePng : './img/reactjs-lite-img.png',
-        imageWebp : './img/reactjs-lite-img.webp',
-        altText : 'reactjs-lite-img'
+        imagePng : './img/react-lite-level-img.png',
+        imageWebp : './img/react-lite-level-img.webp',
+        altText : 'react-lite-level-img'
     },
     {
         id : 'c5r',
@@ -60,9 +60,9 @@ const arrData = [
         studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
         description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
         link : 'https://itgid.info/course/javascript-2',
-        imagePng : './img/javascript-img.png',
-        imageWebp : './img/javascript-img.webp',
-        altText : 'javascript-img'
+        imagePng : './img/javascript-2.0-img.png',
+        imageWebp : './img/javascript-2.0-img.webp',
+        altText : 'javascript-2.0-img'
     },
 ]
 

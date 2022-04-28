@@ -146,45 +146,6 @@ const arrData = [
         imageWebp : './img/cart-of-watches-img.webp',
         altText : 'cart-of-watches-img'
     },
-    {
-        id : 'p7a',
-        dataId : 'a7',
-        title : 'Sport-Shop',
-        category : 'Site',
-        year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
-    },
-    {
-        id : 'p8a',
-        dataId : 'a8',
-        title : 'Exchange-Rates',
-        category : 'Site',
-        year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
-    },
-    {
-        id : 'p9a',
-        dataId : 'a9',
-        title : 'Exchange-Rates',
-        category : 'Site',
-        year : '2021',
-        devTools : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
-        gitLink : 'https://github.com/NightMareStories/Sport-shop',
-        imagePng : './img/sport-shop-img.png',
-        imageWebp : './img/sport-shop-img.webp',
-        altText : 'sport-shop-img'
-    },
 ]
 
 export default arrData;

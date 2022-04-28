@@ -7,17 +7,11 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    
-      <Router>
+    <Router>
       <Switch>
-        
         <App/>
-        
-        
-        
       </Switch>
-      </Router>
-    
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

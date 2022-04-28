@@ -12,9 +12,9 @@ const arrData = [
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
         </>,
-        imagePng : './img/reactjs-img.png',
-        imageWebp : './img/reactjs-img.webp',
-        altText : 'reactjs-img',
+        imagePng : './img/react.js-img.png',
+        imageWebp : './img/react.js-img.webp',
+        altText : 'react.js-img',
     },
     {
         id : 'c2',
@@ -29,9 +29,9 @@ const arrData = [
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
         </>,
-        imagePng : './img/javascript-arrays-img.png',
-        imageWebp : './img/javascript-arrays-img.webp',
-        altText : 'javascript-arrays-img',
+        imagePng : './img/js-array-methods-img.png',
+        imageWebp : './img/js-array-methods-img.webp',
+        altText : 'js-array-methods-img',
     },
     {
         id : 'c3',
@@ -63,9 +63,9 @@ const arrData = [
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
         </>,
-        imagePng : './img/reactjs-lite-img.png',
-        imageWebp : './img/reactjs-lite-img.webp',
-        altText : 'reactjs-lite-img',
+        imagePng : './img/react-lite-level-img.png',
+        imageWebp : './img/react-lite-level-img.webp',
+        altText : 'react-lite-level-img',
     },
     {
         id : 'c5',
@@ -80,9 +80,9 @@ const arrData = [
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
         </>,
-        imagePng : './img/javascript-img.png',
-        imageWebp : './img/javascript-img.webp',
-        altText : 'javascript-img',
+        imagePng : './img/javascript-2.0-img.png',
+        imageWebp : './img/javascript-2.0-img.webp',
+        altText : 'javascript-2.0-img',
     },
 ]
 export default arrData;
