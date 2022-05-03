@@ -65,5 +65,16 @@ const arrData = [
         altText : 'cart-of-watches-img',
         cssHide : ''
     },
+    {
+        id : 'p7',
+        dataId : 'a7',
+        title : 'Daisy_IT-Company',
+        date : '25-01-2022',
+        category : 'website',
+        imagePng : './img/Daisy_IT-Company-img.png',
+        imageWebp : './img/Daisy_IT-Company-img.webp',
+        altText : 'Daisy_IT-Company-img',
+        cssHide : 'non-visible'
+    },
 ]
 export default arrData;

@@ -146,6 +146,33 @@ const arrData = [
         imageWebp : './img/cart-of-watches-img.webp',
         altText : 'cart-of-watches-img'
     },
+    {
+        id : 'p7a',
+        dataId : 'a7',
+        title : 'Daisy_IT-Company',
+        category : 'Site',
+        year : '2022',
+        devTools : 'HTML5, LESS, JavaScriptES6, jQuery, MixItUp',
+        description : 
+            <>
+                <p>
+                    Daisy is a one-page business card site for a web development company that provides services for creating their multifunctional site.
+                </p>
+                <p>
+                    The site consists of several sections: logo and navigation; proposals for the client; descriptions of the work process in steps; company Services; portfolio of works using content filtering; contacts for communication with employees of the company.
+                </p>
+                <p>
+                    This website was developed using the latest versions of "HTML5" and "CSS3". The site was visualized through the "LESS" preprocessor, and "JavaScript" - the "jQuery" library - is responsible for the work of filtering the content on the page.
+                </p>
+                <p> 
+                    To display some icons, "Font Awesome" was added to the project. This site is valid and supports mobile devices.
+                </p>
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Daisy_IT-Company',
+        imagePng : './img/Daisy_IT-Company-img.png',
+        imageWebp : './img/Daisy_IT-Company-img.webp',
+        altText : 'Daisy_IT-Company-img'
+    },
 ]
 
 export default arrData;
