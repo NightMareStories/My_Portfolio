@@ -173,6 +173,33 @@ const arrData = [
         imageWebp : './img/Daisy_IT-Company-img.webp',
         altText : 'Daisy_IT-Company-img'
     },
+    {
+        id : 'p8a',
+        dataId : 'a8',
+        title : 'Web Solutions EM',
+        category : 'Site',
+        year : '2022',
+        devTools : 'HTML5, CSS3, Bootstrap 5, JavaScriptES6, jQuery, Slick Slider',
+        description : 
+            <>
+                <p>
+                    Web-Solutions-EM is a website for a company that designs and develops applications and websites for clients in various business areas.
+                </p>
+                <p>
+                    This site consists of several sections and blocks with content and information: the title section with navigation and a burger for mobile devices; section with information about the company and its capabilities; section with company services; portfolio section with content filtering; section with tariff plans; section with employees of the company; news blog section; and a section with company contacts and feedback.
+                </p>
+                <p>
+                    This website was developed using the latest versions of "HTML5" and "CSS3". The site was visualized through the "Bootstrap" library, and "JavaScript" - the "jQuery" library and a third-party slider "Slick Slider" are responsible for the work of the content slider on the page. There is also content filtering on the site. 
+                </p>
+                <p> 
+                    Since the site is written in "Bootstrap" it is fully mobile friendly and displays correctly in all browsers.
+                </p>
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Web_Solutions_EM',
+        imagePng : './img/web-solutions-em-img.png',
+        imageWebp : './img/web-solutions-em-img.webp',
+        altText : 'web-solutions-em-img'
+    },
 ]
 
 export default arrData;
