@@ -149,6 +149,36 @@ const arrData = [
     {
         id : 'p7a',
         dataId : 'a7',
+        title : 'Olimp',
+        category : 'Site',
+        year : '2022',
+        devTools : 'HTML5, SCSS, JavaScriptES6, Swiper, noUiSlider, wNumb, Gulp',
+        description : 
+            <>
+                <p>
+                    Olimp is an online store site selling sports equipment and goods focused on healthy leisure. It consists of a main page, a product catalog page, a product page, and a checkout page.
+                </p>
+                <p>
+                    On the main page there is a slider with popular products, a slider with store product brands, and a block with information about the company.<br/>
+
+                    On the product catalog page, there is a block with store products and a filter with a large number of product filtering options.<br/>
+
+                    On the product page there is a slider with product images, a description, and its characteristics.<br/>
+                    
+                    On the checkout page, there is a form for filling in user data, as well as a basket with goods added to it.
+                </p>
+                <p>
+                    "JavaScript" was used in the development of this site, and "Gulp" was used as the project builder. The site was visualized using the "SCSS" preprocessor. "Swiper" is responsible for the operation of the content slider on the main page and the product page, and the "noUiSlider" slider with the "wNumb" number formatting library is used to operate the range of values in the filter block on the product catalog page. Also, the entire site is completely valid, responsive and optimized for mobile devices.
+                </p>
+            </>,
+        gitLink : 'https://github.com/NightMareStories/Olimp',
+        imagePng : './img/olimp-img.png',
+        imageWebp : './img/olimp-img.webp',
+        altText : 'olimp-img'
+    },
+    {
+        id : 'p8a',
+        dataId : 'a8',
         title : 'Daisy_IT-Company',
         category : 'Site',
         year : '2022',
@@ -174,8 +204,8 @@ const arrData = [
         altText : 'Daisy_IT-Company-img'
     },
     {
-        id : 'p8a',
-        dataId : 'a8',
+        id : 'p9a',
+        dataId : 'a9',
         title : 'Web Solutions EM',
         category : 'Site',
         year : '2022',

@@ -68,6 +68,17 @@ const arrData = [
     {
         id : 'p7',
         dataId : 'a7',
+        title : 'Olimp',
+        date : '01-06-2022',
+        category : 'website',
+        imagePng : './img/olimp-img.png',
+        imageWebp : './img/olimp-img.webp',
+        altText : 'olimp-img',
+        cssHide : 'non-visible'
+    },
+    {
+        id : 'p8',
+        dataId : 'a8',
         title : 'Daisy_IT-Company',
         date : '25-01-2022',
         category : 'website',
@@ -77,8 +88,8 @@ const arrData = [
         cssHide : 'non-visible'
     },
     {
-        id : 'p8',
-        dataId : 'a8',
+        id : 'p9',
+        dataId : 'a9',
         title : 'Web Solutions EM',
         date : '01-02-2022',
         category : 'website',
