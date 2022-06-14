@@ -9,7 +9,7 @@ function Footer(props) {
                 <div className="content-footer__block block-footer">
                     <div className="block-footer__credits">
                         <div className="block-footer__copyrights">
-                            &copy; 2021 Poteryaev Aleksandr
+                            &copy; 2022 Poteryaev Aleksandr
                         </div>
                         <div className="block-footer__social">
                             <ul>

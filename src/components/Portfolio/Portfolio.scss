@@ -7,6 +7,10 @@
 
 //====================== styles ========================
 
+.non-visible {
+    display: none;
+}
+
 .portfolio-block{
     &__button {
         text-align: center;
@@ -118,10 +122,6 @@
     }
 }
 
-.non-visible {
-   display: none;
-}
-
 .active-filter {
     font-family: $font-bold;
     color: $color-primary-black;
@@ -143,6 +143,9 @@
             flex: 0 0 50%;
         }
     }
+    .non-visible {
+        display: none;
+    }
     .portfolio-item {
         width: 100%;
         &__link {
@@ -158,6 +161,9 @@
         &__column {
             flex: 0 0 100%;
         }
+    }
+    .non-visible {
+        display: none;
     }
     .portfolio-item {
         width: 370px;
