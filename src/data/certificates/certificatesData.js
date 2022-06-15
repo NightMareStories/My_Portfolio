@@ -50,12 +50,18 @@ const arrData = [
         date : '15-10 2020',
         category : 'JavaScript ES6',
         description : 
-        <>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-        </>,
+            <>
+                <p>
+                    "OOP" it is a programming methodology based on the interaction of objects with each other, making it possible to inherit some properties and data from one object to another, change these properties, add new ones, etc. Due to this, when creating large projects, it is unnecessary to constantly create new data, write a huge amount of code, thereby making it unoptimized and difficult to read for everyone. 
+                </p>
+                <p>
+                    In this course, I met and mastered the work of "OOP" in "JavaScript" using "prototypes", as well as the new "Class" syntax in "JavaScript ES6", and studied the following topics:
+                    
+                </p>
+                <p>
+                    "What is OOP, myths and reality. OOP Whales : encapsulation, polymorphism, inheritance"; "The concept of an object. Properties and methods. Prototype programming. Inheritance"; "Class, object, constructor. properties and methods. This"; "Inheritance using classes. Super, constructor"; "Magic methods get, set (getters and setters). The concept of private properties"; "Static properties and methods"; "This is a value in classes, objects, functions. Arrow functions and this. The concept of context"; "Explicitly specifying a context using call and apply. The bind method".
+                </p>
+            </>,
         imagePng : './img/javascript-oop-img.png',
         imageWebp : './img/javascript-oop-img.webp',
         altText : 'javascript-oop-img',

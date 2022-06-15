@@ -53,8 +53,20 @@ const arrData = [
         title : 'OOP In JavaScript',
         category : 'JavaScript ES6',
         year : '2020',
-        studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
+        studiedTopics : 'Encapsulation, Polymorphism, Inheritance, Properties and methods, Prototype programming, Class, Object, Constructor, Getters and setters, Private properties, Static properties and methods, This, Call, Apply, Bind',
+        description : 
+            <>
+                <p>
+                    "OOP" it is a programming methodology based on the interaction of objects with each other, making it possible to inherit some properties and data from one object to another, change these properties, add new ones, etc. Due to this, when creating large projects, it is unnecessary to constantly create new data, write a huge amount of code, thereby making it unoptimized and difficult to read for everyone. 
+                </p>
+                <p>
+                    In this course, I met and mastered the work of "OOP" in "JavaScript" using "prototypes", as well as the new "Class" syntax in "JavaScript ES6", and studied the following topics:
+                  
+                </p>
+                <p>
+                    "What is OOP, myths and reality. OOP Whales : encapsulation, polymorphism, inheritance"; "The concept of an object. Properties and methods. Prototype programming. Inheritance"; "Class, object, constructor. properties and methods. This"; "Inheritance using classes. Super, constructor"; "Magic methods get, set (getters and setters). The concept of private properties"; "Static properties and methods"; "This is a value in classes, objects, functions. Arrow functions and this. The concept of context"; "Explicitly specifying a context using call and apply. The bind method".
+                </p>
+            </>,
         link : 'https://itgid.info/course/object-js',
         imagePng : './img/javascript-oop-img.png',
         imageWebp : './img/javascript-oop-img.webp',
