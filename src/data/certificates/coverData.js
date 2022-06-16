@@ -60,8 +60,7 @@ const arrData = [
                     "OOP" it is a programming methodology based on the interaction of objects with each other, making it possible to inherit some properties and data from one object to another, change these properties, add new ones, etc. Due to this, when creating large projects, it is unnecessary to constantly create new data, write a huge amount of code, thereby making it unoptimized and difficult to read for everyone. 
                 </p>
                 <p>
-                    In this course, I met and mastered the work of "OOP" in "JavaScript" using "prototypes", as well as the new "Class" syntax in "JavaScript ES6", and studied the following topics:
-                  
+                    In this course, after completing 49 tasks, I met and mastered the work of "OOP" in "JavaScript" using "prototypes", as well as the new "Class" syntax in "JavaScript ES6", and studied the following topics:
                 </p>
                 <p>
                     "What is OOP, myths and reality. OOP Whales : encapsulation, polymorphism, inheritance"; "The concept of an object. Properties and methods. Prototype programming. Inheritance"; "Class, object, constructor. properties and methods. This"; "Inheritance using classes. Super, constructor"; "Magic methods get, set (getters and setters). The concept of private properties"; "Static properties and methods"; "This is a value in classes, objects, functions. Arrow functions and this. The concept of context"; "Explicitly specifying a context using call and apply. The bind method".
@@ -78,8 +77,19 @@ const arrData = [
         title : 'React Lite Level',
         category : 'React JS',
         year : '2020',
-        studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
+        studiedTopics : 'Node.js, NPM, Structure of the application, OOP in JavaScript ES6, Prototype inheritance, Creating components, Props, State, Forms, Life cycle of components, React game, React JSX, React Router, Deploy',
+        description : 
+            <>  
+                <p>
+                    Every year there are more and more programming technologies, new frameworks, libraries and various tools for different projects and purposes appear. They allow you to create fast, optimized and readable interfaces that people from all over the world use. One of the most popular today is "React JS".
+                </p>
+                <p>
+                    React Lite Level is a short introduction to "React JS", it understands the main features and tools in working with "React JS" using the new "Class" syntax introduced in "JavaScript ES6". The topics of this course were: "Introduction to Node.js and NPM"; "Installing React and generating the first application. Getting to know the structure of the application"; "OOP in ES6. The concept of properties and methods, classes, objects, inheritance. Part 1, Part 2"; "Prototype inheritance in JS"; "The concept of components. Creating components. Calling components in each other"; "Props and State. Part 1, Part 2, Part 3"; "Working with Forms. React. Lite Level"; "Life cycle of components"; "A simple React game"; "React JSX"; "Site navigation in React. React Router"; "Deploy React Apps".
+                </p>
+                <p>
+                    After completing this course and solving 86 tasks, I learned how "React JS" works and got to know it well. I created several of my projects using the knowledge gained from this course to consolidate and remember all the features of "React JS".
+                </p>
+            </>,
         link : 'https://itgid.info/course/react-lite-level',
         imagePng : './img/react-lite-level-img.png',
         imageWebp : './img/react-lite-level-img.webp',
@@ -92,7 +102,18 @@ const arrData = [
         category : 'JavaScript ES6',
         year : '2020',
         studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
-        description : <><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente consequatur veritatis sequi, quod, ab aspernatur architecto dolorem, nobis blanditiis repudiandae quisquam! Ratione esse illo nemo porro! Quia deserunt totam eligendi.</p></>,
+        description : 
+            <>
+                <p>
+
+                </p>
+                <p>
+                    React Lite Level is a short introduction to "React JS", it understands the main features and tools in working with "React JS" using the new "Class" syntax introduced in "JavaScript ES6". The topics of this course were: "Introduction to Node.js and NPM"; "Installing React and generating the first application. Getting to know the structure of the application"; "OOP in ES6. The concept of properties and methods, classes, objects, inheritance. Part 1"; "OOP in ES6. The concept of properties and methods, classes, objects, inheritance. Part 2"; "Prototype inheritance in JS"; "The concept of components. Creating components. Calling components in each other"; "Props and State. Part 1"; "Props and State. Part 2"; "Props and State. Part 3"; "Working with Forms. React. Lite Level"; "Life cycle of components"; "A simple React game"; "React JSX"; "Site navigation in React. React Router"; "Deploy React Apps".
+                </p>
+                <p>
+
+                </p>
+            </>,
         link : 'https://itgid.info/course/javascript-2',
         imagePng : './img/javascript-2.0-img.png',
         imageWebp : './img/javascript-2.0-img.webp',
