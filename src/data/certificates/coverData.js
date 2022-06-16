@@ -5,7 +5,7 @@ const arrData = [
         title : 'React JS',
         category : 'React JS',
         year : '2021',
-        studiedTopics : 'JSX, Components, Routing, state, props, refs, DOM, hooks, redux, life cycle components, events, functions, creating elements, React with PHP, React with Node.js',
+        studiedTopics : 'JSX, Components, Routing, State, Props, Refs, DOM, Hooks, Redux, Life cycle components, Events, Functions, Creating elements, React with PHP, React with Node.js',
         description :
             <>
                 <p>
@@ -29,7 +29,7 @@ const arrData = [
         title : 'Array Methods In JavaScript',
         category : 'JavaScript ES6',
         year : '2021',
-        studiedTopics : 'indexOf, Includes, push, pop, Shift, Unshift, Slice, Map, Filter, Reduce, isArray, Splice, concat, Find, FindIndex, LastIndexOf, Sort, Reverse, Split Join, Every, Some, Flat, Fill, keys',
+        studiedTopics : 'IndexOf, Includes, Push, Pop, Shift, Unshift, Slice, Map, Filter, Reduce, IsArray, Splice, Concat, Find, FindIndex, LastIndexOf, Sort, Reverse, Split Join, Every, Some, Flat, Fill, Keys',
         description : 
             <>
                 <p>
@@ -101,17 +101,17 @@ const arrData = [
         title : 'JavaScript 2.0',
         category : 'JavaScript ES6',
         year : '2020',
-        studiedTopics : 'HTML5, JavaScriptES6, SCSS, JQuery, Gulp, Swiper-Slider',
+        studiedTopics : 'VScode, First program, Data Entry Basics, If, Else, Switch case, Working with forms, Loops, Nested Loops, Functions, While, Do While, DOM, Array, pop, push, splice, Nested arrays, Object, Set, For, For in, For of, Map, Filter, Join, Split, ForEach, Mouse events, Keyboard events, Touch events, Try Catch, LocalStorage, POST, GET, AJAX, FETCH, Promise, OOP in ES6, Closures, Recursion',
         description : 
             <>
                 <p>
-
+                    JavaScript is a programming language that has been in the lead all over the world for many years. A large number of front-end developers create their projects on it. A voluminous number of frameworks, libraries, extensions and tools have been created for it, but native "JavaScript" is still a very important item to work in any "Web development" company.
                 </p>
                 <p>
-                    React Lite Level is a short introduction to "React JS", it understands the main features and tools in working with "React JS" using the new "Class" syntax introduced in "JavaScript ES6". The topics of this course were: "Introduction to Node.js and NPM"; "Installing React and generating the first application. Getting to know the structure of the application"; "OOP in ES6. The concept of properties and methods, classes, objects, inheritance. Part 1"; "OOP in ES6. The concept of properties and methods, classes, objects, inheritance. Part 2"; "Prototype inheritance in JS"; "The concept of components. Creating components. Calling components in each other"; "Props and State. Part 1"; "Props and State. Part 2"; "Props and State. Part 3"; "Working with Forms. React. Lite Level"; "Life cycle of components"; "A simple React game"; "React JSX"; "Site navigation in React. React Router"; "Deploy React Apps".
+                    Thanks to this course, I learned the whole "JavaScript ES6" from and to, solved more than 449 tasks, mastered and consolidated each of the topics of this course, learned to create many interfaces, applications and projects, and all thanks to this voluminous material:
                 </p>
                 <p>
-
+                    "Setting up VScode for work with course"; "We start and write the first program"; "Basics of data entry"; "If, else, switch case statement - choice in JavaScript"; "Working with forms: input, range, textarea, checkbox"; "Loops in JavaScript (Part 1)"; "Nested Loops in JavaScript (Part 2)"; "Functions and all about them"; "While Loop, Do While"; "Working with DOM"; "Arrays in JavaScript"; "Adding and removing elements in an array, pop, push, splice"; "two-dimensional arrays"; "Associative array (object) in JavaScript"; "Practice on arrays - get weather forecast by API"; "Set in JavaScript"; "Iterating over arrays: for, for in, for of"; "Iterating over arrays: for, for in, for of"; "Array methods: join, split, forEach (part 2)"; "Mouse events in JavaScript"; "Keyboard events in JavaScript"; "Brief overview of touch events"; "Handling errors with Try Catch"; "LocalStorage. Save everything"; "A bit of theory - working with POST, GET requests"; "AJAX - Asynchronous JavaScript"; "Learning FETCH in Practice"; "Working with Promises"; "OOP in ES6"; "Closures"; "Recursion".
                 </p>
             </>,
         link : 'https://itgid.info/course/javascript-2',

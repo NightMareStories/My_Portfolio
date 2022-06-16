@@ -94,12 +94,17 @@ const arrData = [
         date : '21-06 2020',
         category : 'JavaScript ES6',
         description : 
-        <>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, aperiam rerum porro praesentium quia eos, officia nostrum id cumque minima. Nobis minima eius unde dolore distinctio eveniet animi amet.</p>
-        </>,
+            <>
+                <p>
+                    JavaScript is a programming language that has been in the lead all over the world for many years. A large number of front-end developers create their projects on it. A voluminous number of frameworks, libraries, extensions and tools have been created for it, but native "JavaScript" is still a very important item to work in any "Web development" company.
+                </p>
+                <p>
+                    Thanks to this course, I learned the whole "JavaScript ES6" from and to, solved more than 449 tasks, mastered and consolidated each of the topics of this course, learned to create many interfaces, applications and projects, and all thanks to this voluminous material:
+                </p>
+                <p>
+                    "Setting up VScode for work with course"; "We start and write the first program"; "Basics of data entry"; "If, else, switch case statement - choice in JavaScript"; "Working with forms: input, range, textarea, checkbox"; "Loops in JavaScript (Part 1)"; "Nested Loops in JavaScript (Part 2)"; "Functions and all about them"; "While Loop, Do While"; "Working with DOM"; "Arrays in JavaScript"; "Adding and removing elements in an array, pop, push, splice"; "two-dimensional arrays"; "Associative array (object) in JavaScript"; "Practice on arrays - get weather forecast by API"; "Set in JavaScript"; "Iterating over arrays: for, for in, for of"; "Iterating over arrays: for, for in, for of"; "Array methods: join, split, forEach (part 2)"; "Mouse events in JavaScript"; "Keyboard events in JavaScript"; "Brief overview of touch events"; "Handling errors with Try Catch"; "LocalStorage. Save everything"; "A bit of theory - working with POST, GET requests"; "AJAX - Asynchronous JavaScript"; "Learning FETCH in Practice"; "Working with Promises"; "OOP in ES6"; "Closures"; "Recursion".
+                </p>
+            </>,
         imagePng : './img/javascript-2.0-img.png',
         imageWebp : './img/javascript-2.0-img.webp',
         altText : 'javascript-2.0-img',
