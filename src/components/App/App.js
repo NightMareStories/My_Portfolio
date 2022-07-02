@@ -9,14 +9,7 @@ import Footer from '../Footer/Footer';
 import store from '../../store';
 import { Provider } from 'react-redux';
 
-
 //======================================================
-
-
-/* <picture>
-                    <source srcSet="img/about-text-img.webp" type="image/webp" />
-                    <img src="img/about-text-img.png" alt="" />
-                </picture> */
 
 function App() {
     const [hireResumeData, setHireResumeData] = useState('');

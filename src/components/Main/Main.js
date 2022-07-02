@@ -98,8 +98,8 @@ function Main(props) {
                     </div>
                     <div className="intro-block__picture">
                         <picture>
-                            <source srcSet="img/background-intro-img.webp" type="image/webp" />
-                            <img src="img/background-intro-img.png" alt="" />
+                            <source srcSet="img/intro-block-img.webp" type="image/webp" />
+                            <img src="img/intro-block-img.png" alt="intro-block-img" />
                         </picture>
                     </div>
                 </div>
@@ -127,8 +127,8 @@ function Main(props) {
                     <div className="about-block__picture">
                         <div className="about-block__picture_frame">
                             <picture>
-                                <source srcSet="img/logo-img.webp" type="image/webp" />
-                                <img src="img/logo-img.png" alt="" />
+                                <source srcSet="img/about-me-img.webp" type="image/webp" />
+                                <img src="img/about-me-img.png" alt="about-me-img" />
                             </picture>
                         </div>
                     </div>
@@ -136,9 +136,12 @@ function Main(props) {
                         <h2 className="about-text__title">about me</h2>
                         <h3 className="about-text__subtitle">who am i</h3>
                         <div className="about-text__text">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus explicabo molestias debitis repudiandae commodi voluptatibus, itaque dolores alias repellendus amet numquam aliquid, magni laborum, cum non quos sunt reprehenderit illum?</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, cumque quidem possimus enim in excepturi expedita obcaecati quae? Quibusdam libero adipisci eveniet obcaecati suscipit quas, consectetur repellat explicabo maiores sed!</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, pariatur enim. Aspernatur a perspiciatis quia, omnis magnam impedit autem ipsum corrupti possimus obcaecati neque velit, dicta, blanditiis hic deleniti sed!</p>
+                            <p>
+                                I got acquainted with programming 3 years ago, I was interested in trying something new, something in which you can constantly develop, something that you can work with anywhere and at any time. I needed to see the result of my work, and control every element of it, so I chose front-end development.
+                            </p>
+                            <p>
+                                I have learned technologies like HTML5, CSS3, JavaScript ES6, React JS, React-Redux, LESS, SCSS and more. I can create applications, projects, programs using these technologies and always try to do better, faster and better. And most importantly, I love front-end development, I like doing what I do, and I don't want to stop, I WANT TO DEVELOP.
+                            </p>
                         </div>
                         <div className="about-text__button about-buttons">
                             <a href="/" className="about-buttons__button _btn" data-id="hire" onClick={openModal}>HIRE ME</a>

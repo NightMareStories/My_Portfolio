@@ -42,7 +42,7 @@ function Nav(props) {
             <nav className="block-footer__nav">
                     <ul className="block-footer__actions actions-footer">
                         <li><Link to='/' className="actions-footer__link" data-id="about" onClick={navScroll}><span>About me</span></Link></li>
-                        <li><Link to='/rates' className="actions-footer__link"><span>My projects</span></Link></li>
+                        <li><a href='https://github.com/NightMareStories?tab=repositories' className="actions-footer__link" onClick={e => e.stopPropagation()}><span>My projects</span></a></li>
                         <li><Link to='/' className="actions-footer__link" data-id="portfolio" onClick={navScroll}><span>Portfolio</span></Link></li>
                         <li><Link to='/' className="actions-footer__link" data-id="certificates" onClick={navScroll}><span>Certificates</span></Link></li>
                         <li><Link to='/' className="actions-footer__link actions-footer__link_btn" data-id="hire" onClick={openModal}><span>Hire me</span></Link></li>
