@@ -18,7 +18,7 @@ const arrData = [
                     In the process of studying the course, I completed 123 or more practical tasks on the above topics, consolidating my knowledge and applying it to real projects. It was this course that showed me how frameworks, and in this case "React JS", are convenient and practical in application development, because it was on "React JS" using "redux" and "toolkit" that I created my portfolio site, on which you are now are.
                 </p>
             </>,
-        link : 'https://itgid.info/course/reactjs',
+        link : 'https://itgid.com.ua/course/reactjs',
         imagePng : './img/react.js-img.png',
         imageWebp : './img/react.js-img.webp',
         altText : 'react.js-img'
@@ -42,7 +42,7 @@ const arrData = [
                     As you can see, there are many tools for working with arrays and objects in "JavaScript", but it's worth considering that they all have their own scope, so you should always read the documentation for working with them. During this course, I completed all 120 tasks on these topics, working with each of these methods and honing my skills in working with arrays and objects.
                 </p>
             </>,
-        link : 'https://itgid.info/course/arraymethod',
+        link : 'https://itgid.com.ua/course/arraymethod',
         imagePng : './img/js-array-methods-img.png',
         imageWebp : './img/js-array-methods-img.webp',
         altText : 'js-array-methods-img'
@@ -66,7 +66,7 @@ const arrData = [
                     "What is OOP, myths and reality. OOP Whales : encapsulation, polymorphism, inheritance"; "The concept of an object. Properties and methods. Prototype programming. Inheritance"; "Class, object, constructor. properties and methods. This"; "Inheritance using classes. Super, constructor"; "Magic methods get, set (getters and setters). The concept of private properties"; "Static properties and methods"; "This is a value in classes, objects, functions. Arrow functions and this. The concept of context"; "Explicitly specifying a context using call and apply. The bind method".
                 </p>
             </>,
-        link : 'https://itgid.info/course/object-js',
+        link : 'https://itgid.com.ua/course/object-js',
         imagePng : './img/javascript-oop-img.png',
         imageWebp : './img/javascript-oop-img.webp',
         altText : 'javascript-oop-img'
@@ -90,7 +90,7 @@ const arrData = [
                     After completing this course and solving 86 tasks, I learned how "React JS" works and got to know it well. I created several of my projects using the knowledge gained from this course to consolidate and remember all the features of "React JS".
                 </p>
             </>,
-        link : 'https://itgid.info/course/react-lite-level',
+        link : 'https://itgid.com.ua/course/react-lite-level',
         imagePng : './img/react-lite-level-img.png',
         imageWebp : './img/react-lite-level-img.webp',
         altText : 'react-lite-level-img'
@@ -114,7 +114,7 @@ const arrData = [
                     "Setting up VScode for work with course"; "We start and write the first program"; "Basics of data entry"; "If, else, switch case statement - choice in JavaScript"; "Working with forms: input, range, textarea, checkbox"; "Loops in JavaScript (Part 1)"; "Nested Loops in JavaScript (Part 2)"; "Functions and all about them"; "While Loop, Do While"; "Working with DOM"; "Arrays in JavaScript"; "Adding and removing elements in an array, pop, push, splice"; "two-dimensional arrays"; "Associative array (object) in JavaScript"; "Practice on arrays - get weather forecast by API"; "Set in JavaScript"; "Iterating over arrays: for, for in, for of"; "Iterating over arrays: for, for in, for of"; "Array methods: join, split, forEach (part 2)"; "Mouse events in JavaScript"; "Keyboard events in JavaScript"; "Brief overview of touch events"; "Handling errors with Try Catch"; "LocalStorage. Save everything"; "A bit of theory - working with POST, GET requests"; "AJAX - Asynchronous JavaScript"; "Learning FETCH in Practice"; "Working with Promises"; "OOP in ES6"; "Closures"; "Recursion".
                 </p>
             </>,
-        link : 'https://itgid.info/course/javascript-2',
+        link : 'https://itgid.com.ua/course/javascript-2',
         imagePng : './img/javascript-2.0-img.png',
         imageWebp : './img/javascript-2.0-img.webp',
         altText : 'javascript-2.0-img'

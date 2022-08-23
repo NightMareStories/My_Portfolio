@@ -1,6 +1,5 @@
 import React from 'react';
 import './ModalPortfolio.scss';
-import { Link } from 'react-router-dom';
 
 function ModalPortfolio(props) {
   const modalP = React.createRef();
@@ -92,8 +91,8 @@ function ModalPortfolio(props) {
             </div>
             <div className="modal_P-content__footer">
               <div className="modal_P-content__links modal-links">
-                <Link to='/exchange-rates' className="modal-links__start">Start App</Link>
-                  <a href={props.gitLink} target="_blank" className="modal-links__git" rel="noopener noreferrer">{props.gitLink}</a>
+                <a href={props.appLink} className="modal-links__start" target="_blank"  rel="noopener noreferrer">Start App</a>
+                  <a href={props.gitLink} className="modal-links__git" target="_blank"  rel="noopener noreferrer">{props.gitLink}</a>
               </div>
               <div className="modal_P-content__slides slides-buttons">
                 <button className="slides-buttons__prev" onClick={prevSlide}>

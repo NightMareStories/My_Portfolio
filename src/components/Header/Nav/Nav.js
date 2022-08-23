@@ -74,7 +74,7 @@ function Nav(props) {
                     <nav className="header-nav__column" ref={navMenu}>
                         <ul className="header-nav__actions actions-header">
                             <li><Link to='/' className="actions-header__link" data-id="about" onClick={navScroll}><span>About me</span></Link></li>
-                            <li><a href='https://github.com/NightMareStories?tab=repositories' className="actions-header__link" onClick={e => e.stopPropagation()}><span>My projects</span></a></li>
+                            <li><a href='https://github.com/NightMareStories?tab=repositories' className="actions-header__link" target="_blank"  rel="noopener noreferrer" onClick={e => e.stopPropagation()}><span>My projects</span></a></li>
                             <li><Link to='/' className="actions-header__link" data-id="portfolio" onClick={navScroll}><span>Portfolio</span></Link></li>
                             <li><Link to='/' className="actions-header__link" data-id="certificates" onClick={navScroll}><span>Certificates</span></Link></li>
                             <li><Link to='/' className="actions-header__link actions-header__link_btn" data-id="hire" onClick={openModal}><span>Hire me</span></Link></li>
