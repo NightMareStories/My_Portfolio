@@ -1,62 +1,72 @@
-//======================= import =======================
+/*======================= Import ========================*/
 
 @import '../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .footer {
+    flex: 0 0 auto;
     padding: 20px 0px;
     background-color: $color-primary-black;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .block-footer {
     display: flex;
     justify-content: space-between;
+
     &__credits {
         display: flex;
         align-items: center;
     }
+
     &__social {
         display: flex;
         align-items: center;
+
         &_link {
             display: inline-block;
             margin-right: 20px;
+            transition: transform 0.2s linear;
+
             img {
                 width: 20px;
                 height: 20px;
-                transition: transform 0.2s linear;
+            }
+
             &:hover {
                 transform: translateY(-5px);
             }
-            }
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
+
     &__copyrights {
         padding-right: 20px;
         margin-right: 20px;
         font-family: $font-regular;
         font-size: 14px;
-        color:#8d8d8e;
+        color: #8d8d8e;
         border-right: 2px solid rgba($color-primary-grey, .6);
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 1200px) {
     .block-footer {
         flex-direction: column-reverse;
         flex-wrap: wrap;
+
         &__credits {
             justify-content: center;
             width: 100%;
@@ -69,10 +79,12 @@
     .footer {
         padding: 5px 0px;
     }
+
     .block-footer {
         &__credits {
             flex-direction: column-reverse;
         }
+
         &__copyrights {
             padding: 0;
             margin: 15px 0px;
@@ -81,4 +93,4 @@
     }
 }
 
-//======================================================
+/*=======================================================*/

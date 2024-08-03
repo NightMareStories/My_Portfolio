@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 function SocialLinksMain(props) {
 
     return (
         <>
-            <a href={props.link} target="_blank"  rel="noopener noreferrer">
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
                 <picture>
                     <source srcSet={props.imageWebp} type="image/webp" />
                     <img src={props.imagePng} alt={props.altText} />

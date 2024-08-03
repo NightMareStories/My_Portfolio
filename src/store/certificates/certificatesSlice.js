@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
-import certificatesData from "../../data/certificates/certificatesData";
+import { createSlice } from '@reduxjs/toolkit';
+import certificatesData from '../../data/certificates/certificatesData';
 
 export const certificatesSlice = createSlice({
-    name : 'certificates',
-    initialState : {
-        data : certificatesData
+    name: 'certificates',
+    initialState: {
+        data: certificatesData
     },
-    reducers : {
-        
+    reducers: {
+
     },
 });
 

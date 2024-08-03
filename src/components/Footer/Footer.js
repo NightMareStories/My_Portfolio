@@ -9,7 +9,7 @@ function Footer(props) {
                 <div className="content-footer__block block-footer">
                     <div className="block-footer__credits">
                         <div className="block-footer__copyrights">
-                            &copy; 2022 Poteryaev Aleksandr
+                            &copy; 2024 Poteryaev Aleksandr
                         </div>
                         <div className="block-footer__social">
                             <ul>
@@ -17,12 +17,11 @@ function Footer(props) {
                             </ul>
                         </div>
                     </div>
-                    <Nav modal={props.modal} setModal={props.setModal} navScroll={props.navScroll} setNavScroll={props.setNavScroll}/>
+                    <Nav modal={props.modal} setModal={props.setModal} navScroll={props.navScroll} setNavScroll={props.setNavScroll} />
                 </div>
-               
             </div>
         </footer>
-  );
+    );
 
 }
 export default Footer;

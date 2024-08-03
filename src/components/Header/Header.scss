@@ -1,26 +1,29 @@
-//====================== import ========================
+/*======================= Import ========================*/
 
 @import '../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .header {
     position: relative;
     padding: 18px 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+
     .top-header {
         &__content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+    }
 
-        }    
-}
-.header-info {
+    .header-info {
         display: flex;
         align-items: center;
+
         &__logo {
             &_img {
                 width: 57px;
@@ -28,15 +31,18 @@
                 border-radius: 50%;
             }
         }
+
         &__text {
             padding-left: 9px;
+
             &_username {
                 font-family: $font-bold;
                 font-size: 16px;
                 line-height: 18px;
                 color: $color-primary-black;
                 margin-bottom: 3px;
-            } 
+            }
+
             &_userprof {
                 font-size: 12px;
                 color: rgba(#2b2a2c, .7);
@@ -45,15 +51,15 @@
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 992px) {
     .header {
-        box-shadow: 0 0 10px rgba(#000000,.25);
+        box-shadow: 0 0 10px rgba(#000000, .25);
     }
 }
 
-//======================================================
+/*=======================================================*/

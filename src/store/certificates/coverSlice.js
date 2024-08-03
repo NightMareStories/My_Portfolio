@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
-import coverData from "../../data/certificates/coverData";
+import { createSlice } from '@reduxjs/toolkit';
+import coverData from '../../data/certificates/coverData';
 
 export const coverSlice = createSlice({
-    name : 'cover',
-    initialState : {
-        data : coverData
+    name: 'cover',
+    initialState: {
+        data: coverData
     },
-    reducers : {
-        
+    reducers: {
+
     },
 });
 

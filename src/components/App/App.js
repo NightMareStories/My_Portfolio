@@ -4,12 +4,13 @@ import Main from '../Main/Main';
 import './App.scss';
 import Footer from '../Footer/Footer';
 
-//======================= redux ========================
+
+/*======================= Redux =========================*/
 
 import store from '../../store';
 import { Provider } from 'react-redux';
 
-//======================================================
+/*=======================================================*/
 
 function App() {
     const [hireResumeData, setHireResumeData] = useState('');
@@ -18,12 +19,12 @@ function App() {
     return (
         <>
             <Provider store={store}>
-                <Header modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
-             
-                <Main modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
-                
-                <Footer modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll}/>
-           </Provider>
+                <Header modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll} />
+
+                <Main modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll} />
+
+                <Footer modal={hireResumeData} setModal={setHireResumeData} navScroll={navScroll} setNavScroll={setNavScroll} />
+            </Provider>
         </>
     );
 }

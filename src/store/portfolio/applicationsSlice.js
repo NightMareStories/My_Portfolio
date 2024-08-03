@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
-import applicationsData from "../../data/portfolio/applicationsData";
+import { createSlice } from '@reduxjs/toolkit';
+import applicationsData from '../../data/portfolio/applicationsData';
 
 export const applicationsSlice = createSlice({
-    name : 'applications',
-    initialState : {
-        data : applicationsData
+    name: 'applications',
+    initialState: {
+        data: applicationsData
     },
-    reducers : {
-        
+    reducers: {
+
     },
 });
 

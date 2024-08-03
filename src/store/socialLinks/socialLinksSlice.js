@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 import socialLinksData from '../../data/socialLinks/socialLinksData';
 
 export const socialLinksSlice = createSlice({
-    name : 'socialLinks',
-    initialState : {
-        data : socialLinksData
+    name: 'socialLinks',
+    initialState: {
+        data: socialLinksData
     },
-    reducers : {
-        
+    reducers: {
+
     },
 });
 

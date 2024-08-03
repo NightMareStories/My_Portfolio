@@ -1,11 +1,11 @@
-//====================== import ========================
+/*======================= Import ========================*/
 
 @import '../../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .modal-resume {
     display: flex;
@@ -32,9 +32,11 @@
     background-color: $color-primary-white;
     transform: scale(1);
     transition: 0.4s all ease;
+
     &__close {
         background: none;
         border: 0;
+
         &_icon {
             width: 35px;
             height: 35px;
@@ -43,6 +45,7 @@
             right: 15px;
             cursor: pointer;
             transition: all .2s ease;
+
             &:hover {
                 width: 40px;
                 height: 40px;
@@ -54,21 +57,25 @@
 
 .modal_R-content {
     text-align: center;
+
     &__header {
         font-family: $font-bold;
         font-size: 25px;
         text-transform: uppercase;
         margin: 45px 20px;
     }
+
     &__footer {
         background-color: $color-primary-black;
     }
+
     .social-contacts {
         &__link {
-             &_icon {
+            &_icon {
                 width: 100px;
-                height: 100px;  
+                height: 100px;
                 transition: all .5s ease;
+
                 &:hover {
                     border-radius: 100%;
                 }
@@ -86,10 +93,10 @@
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 576px) {
     .modal_R-content {
@@ -100,4 +107,4 @@
     }
 }
 
-//======================================================
+/*=======================================================*/

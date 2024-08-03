@@ -1,25 +1,28 @@
-//====================== import ========================
+/*======================= Import ========================*/
 
 @import '../../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .actions-footer {
     display: flex;
     height: 100%;
     align-items: center;
+
     &__link {
         font-family: $font-regular;
         margin-right: 20px;
         font-size: 14px;
         color: #8d8d8e;
         text-transform: capitalize;
+
         &:hover {
             color: #bbbbcc;
         }
+
         &_btn {
             font-family: $font-bold;
             padding: 10px 25px;
@@ -28,10 +31,9 @@
             text-transform: uppercase;
             line-height: 1.1;
             border-radius: 20px;
-            transition: 
-            background-color
-            .2s linear, color
-            .2s linear;
+            transition:
+                background-color .2s linear, color .2s linear;
+
             &:hover {
                 background-color: #bbbbcc;
                 color: $color-primary-black;
@@ -40,10 +42,10 @@
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 1200px) {
     .actions-footer {
@@ -55,26 +57,30 @@
 
 @media (max-width: 576px) {
     .actions-footer {
-        li {            
+        li {
             margin-top: 10px;
             text-align: center;
+
             &:last-child {
                 width: 100%;
                 margin: 30px 0px 0px 0px;
+
                 .actions-footer__link {
                     margin-right: 0;
                 }
             }
+
             &:nth-child(4) {
                 .actions-footer__link {
                     margin-right: 0px;
                 }
             }
         }
+
         &__link {
             margin-right: 10px;
         }
     }
 }
 
-//======================================================
+/*=======================================================*/

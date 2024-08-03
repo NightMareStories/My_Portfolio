@@ -1,11 +1,11 @@
-//====================== import ========================
+/*======================= Import ========================*/
 
 @import '../../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .modal-portfolio {
     display: flex;
@@ -32,9 +32,11 @@
     background-color: $color-primary-white;
     transform: scale(1);
     transition: 0.4s all ease;
+
     &__close {
         background: none;
         border: 0;
+
         &_icon {
             width: 35px;
             height: 35px;
@@ -43,6 +45,7 @@
             right: 15px;
             cursor: pointer;
             transition: all .2s ease;
+
             &:hover {
                 width: 40px;
                 height: 40px;
@@ -55,10 +58,12 @@
 .modal_P-content {
     display: flex;
     flex-wrap: wrap;
+
     &__preview {
         width: 65%;
         position: relative;
         overflow: hidden;
+
         &_img {
             width: 100%;
             height: auto;
@@ -68,15 +73,17 @@
             z-index: 1;
             transform: translate3d(-50%, -50%, 0);
         }
-        
     }
+
     &__description {
         width: 35%;
         padding: 50px 100px 15px 25px;
     }
+
     &__header {
         margin-bottom: 30px;
     }
+
     &__title {
         font-family: $font-bold;
         font-size: 30px;
@@ -84,51 +91,62 @@
         color: $color-primary-black;
         margin-bottom: 5px;
     }
+
     &__info-tag {
         font-family: $font-regular;
         font-size: 18px;
         color: $color-primary-grey;
         text-transform: uppercase;
+
         span {
             margin: 0px 15px;
         }
     }
+
     &__tech {
         margin-bottom: 30px;
     }
+
     &__dev {
         font-family: $font-bold;
         font-size: 16px;
         color: $color-primary-black;
-
     }
+
     &__by {
         font-family: $font-italic;
         font-size: 14px;
         color: $color-primary-grey;
     }
+
     &__text {
         font-family: $font-light;
         font-size: 12px;
         line-height: 2;
         color: $color-primary-grey;
         margin-bottom: 50px;
+
         p {
             padding: 5px;
         }
     }
+
     &__footer {
         display: flex;
         width: 100%;
         height: 100%;
         background-color: $color-primary-black;
     }
-    &__links, &__slides {
+
+    &__links,
+    &__slides {
         padding: 30px;
     }
+
     &__links {
         width: 65%;
     }
+
     &__slides {
         width: 35%;
     }
@@ -137,6 +155,7 @@
 .modal-links {
     display: flex;
     justify-content: space-between;
+
     &__start {
         font-size: 13px;
         padding: 15px 10px;
@@ -151,6 +170,7 @@
         text-transform: uppercase;
         transition: all .3s ease;
     }
+
     &__git {
         padding: 15px 10px;
         text-align: center;
@@ -165,12 +185,14 @@
 .slides-buttons {
     display: flex;
     justify-content: space-between;
-    &__prev, &__next {
+
+    &__prev,
+    &__next {
         width: 33.33333%;
         font-family: $font-regular;
         font-size: 14px;
         text-transform: uppercase;
-        color:black;
+        color: black;
         background-color: $color-primary-white;
         border-color: $color-primary-white;
         cursor: pointer;
@@ -179,12 +201,14 @@
         border: 0;
         transition: all .4s ease;
     }
+
     &__prev {
         &_icon {
             padding-right: 10px;
             height: 11px;
         }
     }
+
     &__next {
         &_icon {
             padding-left: 10px;
@@ -193,17 +217,19 @@
     }
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 1200px) {
     .modal_P-content {
         flex-direction: column;
+
         &__preview {
             width: 100%;
             margin: 45px 0px;
+
             &_img {
                 left: 0;
                 top: 0;
@@ -211,10 +237,12 @@
                 transform: none;
             }
         }
+
         &__description {
             width: 100%;
             padding: 0px 20px;
         }
+
         &__footer {
             flex-direction: column-reverse;
             align-items: center;
@@ -222,4 +250,4 @@
     }
 }
 
-//======================================================
+/*=======================================================*/

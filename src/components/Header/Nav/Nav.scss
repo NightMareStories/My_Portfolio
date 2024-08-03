@@ -1,17 +1,18 @@
-//====================== import ========================
+/*======================= Import ========================*/
 
 @import '../../../vars';
 
-//======================================================
+/*=======================================================*/
 
 
-//====================== styles ========================
+/*==================== Main styles ======================*/
 
 .actions-header {
     display: flex;
     height: 100%;
     align-items: center;
     flex-wrap: wrap;
+
     &__link {
         font-family: $font-bold;
         margin: 10px 20px;
@@ -19,6 +20,7 @@
         font-size: 14px;
         color: $color-primary-black;
         text-transform: uppercase;
+
         &::after {
             content: '';
             width: 0;
@@ -29,42 +31,40 @@
             left: 0;
             z-index: 1;
             transition: width 0.3s linear;
-
         }
+
         &:hover:not(.actions-header__link_btn) {
             &::after {
                 width: 100%;
             }
         }
+
         &_btn {
             padding: 10px 30px;
             margin: 10px 30px;
             border: 2px solid $color-primary-black;
             border-radius: 20px;
-            transition: 
-            background-color
-            .2s linear, color
-            .2s linear;
+            transition:
+                background-color .2s linear, color .2s linear;
+
             &:hover {
                 background-color: $color-primary-black;
                 color: $color-primary-white;
-                
             }
         }
-    }    
+    }
 }
 
 .header-menu {
     &__icon {
         display: none;
     }
-    
 }
 
-//======================================================
+/*=======================================================*/
 
 
-//======================= media ========================
+/*======================= Media =========================*/
 
 @media (max-width: 992px) {
     .header-nav {
@@ -78,6 +78,7 @@
             display: flex;
             background-color: $color-primary-white;
         }
+
         ._hide {
             display: none;
         }
@@ -92,25 +93,31 @@
         z-index: 1000;
         text-align: center;
         background-color: $color-primary-white;
-        box-shadow: 0 10px 10px rgba(#000000,.15);
+        box-shadow: 0 10px 10px rgba(#000000, .15);
         padding: 10px;
+
         &:first-child {
             padding: 35px 0px 0px 0px;
         }
+
         li {
             width: 100%;
             padding: 10px 0;
+
             &:last-child {
                 margin: 10px 0px;
             }
         }
+
         &__link {
             margin: 0;
+
             &_btn {
                 margin: 0;
             }
         }
     }
+
     .header-menu {
         display: none;
         width: 100%;
@@ -121,6 +128,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
+
         &__icon {
             display: block;
             width: 50px;
@@ -128,9 +136,12 @@
             max-width: 100%;
             position: relative;
             z-index: 3000;
-        }     
+            cursor: pointer;
+        }
+
         display: flex;
         justify-content: flex-end;
+
         &__icon {
             top: 24px;
             right: 15px;
@@ -138,4 +149,4 @@
     }
 }
 
-//======================================================
+/*=======================================================*/
