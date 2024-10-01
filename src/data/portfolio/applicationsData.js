@@ -25,7 +25,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Olimp.git',
-        appLink: 'http://sport-shop-olimp.site',
+        appLink: 'http://sport-shop-olimp.website',
         imagePng: '/img/olimp-img.png',
         imageWebp: '/img/olimp-img.webp',
         altText: 'olimp-img'
@@ -53,7 +53,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Cart_of_Watches.git',
-        appLink: 'http://cart-of-watches.site',
+        appLink: 'http://cart-of-watches.website',
         imagePng: '/img/cart-of-watches-img.png',
         imageWebp: '/img/cart-of-watches-img.webp',
         altText: 'cart-of-watches-img'
@@ -81,7 +81,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Web_Solutions_EM.git',
-        appLink: 'http://web-solutions-em.site',
+        appLink: 'http://web-solutions-em.website',
         imagePng: '/img/web-solutions-em-img.png',
         imageWebp: '/img/web-solutions-em-img.webp',
         altText: 'web-solutions-em-img'
@@ -112,7 +112,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Notes_on_ReactJS.git',
-        appLink: 'http://notes-on-reactjs.site',
+        appLink: 'http://notes-on-reactjs.website',
         imagePng: '/img/notes-on-reactjs-img.png',
         imageWebp: '/img/notes-on-reactjs-img.webp',
         altText: 'notes-on-reactjs-img'
@@ -140,7 +140,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Daisy_IT_Company.git',
-        appLink: 'http://daisy-company.site',
+        appLink: 'http://daisy-it-company.website',
         imagePng: '/img/Daisy_IT-Company-img.png',
         imageWebp: '/img/Daisy_IT-Company-img.webp',
         altText: 'Daisy_IT-Company-img'
@@ -167,7 +167,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Cart_of_Goods.git',
-        appLink: 'http://cart-of-goods.site',
+        appLink: 'http://cart-of-goods.website',
         imagePng: '/img/cart-of-goods-img.png',
         imageWebp: '/img/cart-of-goods-img.webp',
         altText: 'cart-of-goods-img'
@@ -192,7 +192,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/My_Portfolio.git',
-        appLink: 'http://about-my-portfolio.site',
+        appLink: 'http://about-my-portfolio.website',
         imagePng: '/img/my-portfolio-img.png',
         imageWebp: '/img/my-portfolio-img.webp',
         altText: 'my-portfolio-img'
@@ -217,7 +217,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Exchange_Rates.git',
-        appLink: 'http://exchange-rates.site',
+        appLink: 'http://exchange-rates.website',
         imagePng: '/img/exchange-rates-img.png',
         imageWebp: '/img/exchange-rates-img.webp',
         altText: 'exchange-rates-img'
@@ -245,7 +245,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/Cabinet_on_JavaScript.git',
-        appLink: 'http://cabinet-on-javascript.site',
+        appLink: 'http://cabinet-on-javascript.website',
         imagePng: '/img/cabinet-on-javascript-img.png',
         imageWebp: '/img/cabinet-on-javascript-img.webp',
         altText: 'cabinet-on-javascript-img'

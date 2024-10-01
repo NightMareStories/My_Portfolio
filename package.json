@@ -1,6 +1,6 @@
 {
   "name": "my_portfolio",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This project was written on 'ReactJS' by me in order to collect all the developments and applications in one place. Simple, convenient and fast",
   "private": true,
   "main": "index.js",
