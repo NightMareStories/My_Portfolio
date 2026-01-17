@@ -19,37 +19,37 @@ const arrData = {
             imageSvg: '/img/whatsapp-icon.svg',
             altText: 'whatsapp-icon',
         },
-        gmail: {
+        facebookMessenger: {
             dataId: 'hire',
             key: 'l3',
+            link: 'https://m.me/61586365227622',
+            imageWebp: '/img/facebook-messenger-icon.webp',
+            imagePng: '/img/facebook-messenger-icon.png',
+            imageSvg: '/img/facebook-messenger-icon.svg',
+            altText: 'facebook-messenger-icon',
+        },
+        gmail: {
+            dataId: 'hire',
+            key: 'l4',
             link: 'mailto:sp202037@gmail.com?subject=Работа',
             imageWebp: '/img/gmail-icon.webp',
             imagePng: '/img/gmail-icon.png',
             imageSvg: '/img/gmail-icon.svg',
             altText: 'gmail-icon',
         },
-        yandex: {
-            dataId: 'hire',
-            key: 'l4',
-            link: 'mailto:sp202037@yandex.ru?subject=Работа',
-            imageWebp: '/img/yandex-icon.webp',
-            imagePng: '/img/yandex-icon.png',
-            imageSvg: '/img/yandex-icon.svg',
-            altText: 'yandex-icon',
-        },
-        headHunter: {
+        facebook: {
             dataId: 'hire',
             key: 'l5',
-            link: 'https://hh.ru/resume/80aaf5bfff0309daaf0039ed1f4e35314e7357',
-            imageWebp: '/img/headhunter-icon.webp',
-            imagePng: '/img/headhunter-icon.png',
-            imageSvg: '/img/headhunter-icon.svg',
-            altText: 'headhunter-icon',
+            link: 'https://facebook.com/61586365227622',
+            imageWebp: '/img/facebook-icon.webp',
+            imagePng: '/img/facebook-icon.png',
+            imageSvg: '/img/facebook-icon.svg',
+            altText: 'facebook-icon',
         },
         linkedIn: {
             dataId: 'hire',
             key: 'l6',
-            link: 'https://linkedin.com/in/александр-потеряев-a41069243',
+            link: 'https://linkedin.com/in/aleksandr-poteryaev-a41069243',
             imageWebp: '/img/linkedin-icon.webp',
             imagePng: '/img/linkedin-icon.png',
             imageSvg: '/img/linkedin-icon.svg',
@@ -58,24 +58,15 @@ const arrData = {
     },
 
     resume: {
-        headHunter: {
-            dataId: 'resume',
-            key: 'l7',
-            link: 'https://hh.ru/resume/80aaf5bfff0309daaf0039ed1f4e35314e7357',
-            imageWebp: '/img/headhunter-icon.webp',
-            imagePng: '/img/headhunter-icon.png',
-            altText: 'headhunter-icon',
-        },
         linkedIn: {
             dataId: 'resume',
-            key: 'l8',
-            link: 'https://linkedin.com/in/александр-потеряев-a41069243',
+            key: 'l7',
+            link: 'https://linkedin.com/in/aleksandr-poteryaev-a41069243',
             imageWebp: '/img/linkedin-icon.webp',
             imagePng: '/img/linkedin-icon.png',
             altText: 'linkedin-icon',
         }
     }
-
 }
 
 export default arrData;

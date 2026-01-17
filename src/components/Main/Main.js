@@ -84,7 +84,7 @@ function Main(props) {
                     <div className="intro-block__content">
                         <div className="intro-block__info info-block">
                             <div className="info-block__subtitle"><h2>Hello, I'm</h2></div>
-                            <div className="info-block__title"><h1>Poteryaev Aleksandr</h1></div>
+                            <div className="info-block__title"><h1>Aleksandr Poteryaev</h1></div>
                             <div className="info-block__text">Front-End Developer</div>
                             <div className="info-block__social social-links">
                                 <ul>
@@ -137,10 +137,10 @@ function Main(props) {
                             <h3 className="about-text__subtitle">who am i</h3>
                             <div className="about-text__text">
                                 <p>
-                                    I got acquainted with programming 3 years ago, I was interested in trying something new, something in which you can constantly develop, something that you can work with anywhere and at any time. I needed to see the result of my work, and control every element of it, so I chose front-end development.
+                                    I got acquainted with programming 4 years ago, I was interested in trying something new, something in which you can constantly develop, something that you can work with anywhere and at any time. I needed to see the result of my work, and control every element of it, so I chose front-end development.
                                 </p>
                                 <p>
-                                    I have learned technologies like HTML5, CSS3, JavaScript ES6, React JS, React-Redux, LESS, SCSS and more. I can create applications, projects, programs using these technologies and always try to do better, faster and better. And most importantly, I love front-end development, I like doing what I do, and I don't want to stop, I WANT TO DEVELOP.
+                                    I have learned technologies like HTML5, CSS3, JavaScript ES6, React JS, React-Redux, LESS, SCSS and more. I can create applications, projects, programs using these technologies and always try to do better, faster and easier. And most importantly, I love front-end development, I like doing what I do, and I don't want to stop, I WANT TO DEVELOP.
                                 </p>
                             </div>
                             <div className="about-text__button about-buttons">

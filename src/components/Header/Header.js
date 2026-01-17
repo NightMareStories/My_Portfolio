@@ -16,7 +16,7 @@ function Header(props) {
                             </div>
                             <div className="header-info__text">
                                 <div className="header-info__text_username">
-                                    Poteryaev<br /> Aleksandr
+                                    Aleksandr<br /> Poteryaev
                                 </div>
                                 <div className="header-info__text_userprof">
                                     Front-End Developer

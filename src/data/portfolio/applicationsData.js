@@ -4,7 +4,7 @@ const arrData = [
         dataId: 'a1',
         title: 'Olimp',
         category: 'Site',
-        year: '2022',
+        year: '2023',
         devTools: 'HTML5, SCSS, JavaScriptES6, Swiper, noUiSlider, wNumb, Gulp',
         description:
             <>
@@ -35,7 +35,7 @@ const arrData = [
         dataId: 'a2',
         title: 'Cart of Watches',
         category: 'App',
-        year: '2023',
+        year: '2024',
         devTools: 'HTML5, JavaScriptES6, SCSS, OOP, Gulp, LocalStorage',
         description:
             <>
@@ -63,7 +63,7 @@ const arrData = [
         dataId: 'a3',
         title: 'Web Solutions EM',
         category: 'Site',
-        year: '2022',
+        year: '2023',
         devTools: 'HTML5, CSS3, Bootstrap 5, JavaScriptES6, jQuery, Slick Slider',
         description:
             <>
@@ -91,7 +91,7 @@ const arrData = [
         dataId: 'a4',
         title: 'Notes on ReactJS',
         category: 'App',
-        year: '2024',
+        year: '2025',
         devTools: 'HTML5, JavaScriptES6, SCSS, ReactJS, NodeJS, OpenServer, Sequelize, MySQL, PhpMyAdmin',
         description:
             <>
@@ -122,7 +122,7 @@ const arrData = [
         dataId: 'a5',
         title: 'Daisy IT Company',
         category: 'Site',
-        year: '2022',
+        year: '2023',
         devTools: 'HTML5, LESS, JavaScriptES6, jQuery, MixItUp',
         description:
             <>
@@ -150,7 +150,7 @@ const arrData = [
         dataId: 'a6',
         title: 'Cart of Goods',
         category: 'App',
-        year: '2024',
+        year: '2025',
         devTools: 'HTML5, SCSS, JavaScriptES6, ReactJS, React-Redux, @reduxjs-toolkit',
         description:
             <>
@@ -177,7 +177,7 @@ const arrData = [
         dataId: 'a7',
         title: 'My Portfolio',
         category: 'Site',
-        year: '2024',
+        year: '2025',
         devTools: 'HTML5, SCSS, JavaScriptES6, ReactJS, React-Redux, @reduxjs/toolkit',
         description:
             <>
@@ -192,7 +192,7 @@ const arrData = [
                 </p>
             </>,
         gitLink: 'https://github.com/NightMareStories/My_Portfolio.git',
-        appLink: 'http://about-my-portfolio.website',
+        appLink: 'http://about-my-portfolio.site',
         imagePng: '/img/my-portfolio-img.png',
         imageWebp: '/img/my-portfolio-img.webp',
         altText: 'my-portfolio-img'
@@ -202,7 +202,7 @@ const arrData = [
         dataId: 'a8',
         title: 'Exchange Rates',
         category: 'App',
-        year: '2023',
+        year: '2024',
         devTools: 'API, Class, HTML5, JavaScriptES6, ReactJS, SCSS, Webpack',
         description:
             <>
@@ -227,7 +227,7 @@ const arrData = [
         dataId: 'a9',
         title: 'Cabinet on JavaScript',
         category: 'App',
-        year: '2023',
+        year: '2024',
         devTools: 'HTML5, JavaScriptES6, PHP, Materialize, OpenServer, MySQL, PhpMyAdmin',
         description:
             <>
